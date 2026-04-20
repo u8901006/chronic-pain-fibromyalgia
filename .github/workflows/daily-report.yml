@@ -50,14 +50,13 @@ jobs:
 
       - name: Fetch papers from PubMed
         run: |
-          node scripts/fetch_papers.mjs --days 7 --max-papers 50 --output papers.json
-        continue-on-error: true
+          node scripts/fetch_papers.mjs --days 7 --max-papers 50 --output papers.json 2>&1 || echo "Fetch had issues, continuing..."
 
       - name: Check papers data
         id: papers
         run: |
           if [ -f papers.json ] && grep -q '"count"' papers.json; then
-            COUNT=$(node -e "const d=require('./papers.json');console.log(d.count||0)")
+            COUNT=$(node --input-type=module -e "import {readFileSync} from 'fs'; const d=JSON.parse(readFileSync('./papers.json','utf-8')); console.log(d.count||0)")
             echo "count=$COUNT" >> $GITHUB_OUTPUT
             echo "Papers found: $COUNT"
           else
