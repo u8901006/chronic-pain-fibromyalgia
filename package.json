@@ -8,7 +8,5 @@
     "report": "node scripts/generate_report.mjs",
     "index": "node scripts/generate_index.mjs"
   },
-  "dependencies": {
-    "fast-xml-parser": "^4.5.0"
-  }
+  "dependencies": {}
 }
