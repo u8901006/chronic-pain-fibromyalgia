@@ -6,20 +6,50 @@
 <title>Chronic Pain · 纖維肌痛症與慢性疼痛文獻日報</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans TC',sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.7;min-height:100vh;display:flex;align-items:center;justify-content:center}
-.container{text-align:center;padding:60px 20px;max-width:600px}
-.icon{font-size:72px;margin-bottom:20px}
-h1{font-size:28px;color:#f1f5f9;margin-bottom:12px}
-p{color:#94a3b8;font-size:16px;margin:8px 0}
-a{color:#818cf8;text-decoration:none}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans TC',sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.7;min-height:100vh}
+.container{max-width:700px;margin:0 auto;padding:40px 20px}
+.header{text-align:center;padding:56px 20px 40px;background:linear-gradient(135deg,#1e3a5f 0%,#2d1b69 50%,#1a1a2e 100%);border-radius:24px;margin-bottom:36px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(99,102,241,0.1) 0%,transparent 60%);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.header-icon{font-size:72px;display:block;margin-bottom:16px}
+h1{font-size:30px;color:#f1f5f9;margin-bottom:8px;letter-spacing:1px}
+.subtitle{color:#94a3b8;font-size:16px;margin-bottom:12px}
+.total-count{color:#818cf8;font-size:14px}
+.report-list{list-style:none}
+.report-list li{margin:12px 0}
+.report-list a{display:block;padding:16px 20px;background:#1e293b;border:1px solid #334155;border-radius:14px;color:#e2e8f0;text-decoration:none;font-size:15px;transition:all 0.2s}
+.report-list a:hover{background:#2d1b69;border-color:#8b5cf6;transform:translateX(4px)}
+.footer{text-align:center;padding:32px 20px;margin-top:40px;border-top:1px solid #1e293b}
+.footer a{color:#818cf8;text-decoration:none;margin:0 8px;font-size:14px}
+.footer a:hover{color:#a78bfa;text-decoration:underline}
+.footer .footer-note{color:#475569;font-size:12px;margin-top:12px}
+.footer .clinic-links{margin:20px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.footer .clinic-links a{background:#1e293b;border:1px solid #334155;padding:10px 20px;border-radius:12px;font-size:14px;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s}
+.footer .clinic-links a:hover{background:#2d1b69;border-color:#8b5cf6;color:#c4b5fd;text-decoration:none}
 </style>
 </head>
 <body>
 <div class="container">
-  <div class="icon">🩺</div>
-  <h1>Chronic Pain · 纖維肌痛症與慢性疼痛文獻日報</h1>
-  <p>每日自動更新中，請稍後再來查看。</p>
-  <p><a href="https://github.com/u8901006/chronic-pain-fibromyalgia">GitHub</a></p>
+  <div class="header">
+    <span class="header-icon">🩺</span>
+    <h1>Chronic Pain</h1>
+    <div class="subtitle">纖維肌痛症與慢性疼痛文獻日報 · 每日自動更新</div>
+    <div class="total-count">共 1 期日報</div>
+  </div>
+  <ul class="report-list">
+    <li><a href="https://u8901006.github.io/chronic-pain-fibromyalgia/chronic-pain-2026-04-20.html">📅 2026年4月20日（週一）</a></li>
+  </ul>
+  <div class="footer">
+    <div class="clinic-links">
+      <a href="https://www.leepsyclinic.com/" target="_blank">🏥 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" target="_blank">📩 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" target="_blank">☕ Buy me a coffee</a>
+    </div>
+    <div class="footer-note">
+      Powered by PubMed + Zhipu AI ·
+      <a href="https://github.com/u8901006/chronic-pain-fibromyalgia" target="_blank">GitHub</a>
+    </div>
+  </div>
 </div>
 </body>
 </html>
