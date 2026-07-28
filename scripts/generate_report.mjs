@@ -2,9 +2,9 @@
 import { writeFileSync, readFileSync, existsSync, mkdirSync } from "fs";
 import { resolve, dirname } from "path";
 
-const API_BASE = process.env.ZHIPU_API_BASE || "https://open.bigmodel.cn/api/coding/paas/v4";
-const MODELS = ["GLM-5-Turbo", "GLM-4.7", "GLM-4.7-Flash"];
-const MAX_TOKENS = 100000;
+const API_BASE = process.env.NVIDIA_API_BASE || "https://integrate.api.nvidia.com/v1";
+const MODELS = ["nvidia/nemotron-3-super-120b-a12b", "nvidia/nemotron-3-nano-30b-a3b"];
+const MAX_TOKENS = 16384;
 const TIMEOUT_MS = 660000;
 
 const SYSTEM_PROMPT = `你是纖維肌痛症（fibromyalgia）與慢性疼痛領域的資深研究員與科學傳播者。你的任務是：
@@ -100,7 +100,7 @@ function robustJsonParse(text) {
   return null;
 }
 
-async function callZhipuAPI(apiKey, papersData) {
+async function callNvidiaAPI(apiKey, papersData) {
   const dateStr = papersData.date || new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Taipei" });
   const paperCount = papersData.count || 0;
   const papersText = JSON.stringify(papersData.papers || [], null, 2);
@@ -171,9 +171,11 @@ ${papersText}
             { role: "system", content: SYSTEM_PROMPT },
             { role: "user", content: userPrompt },
           ],
-          temperature: 0.3,
-          top_p: 0.9,
+          temperature: 1.0,
+          top_p: 0.95,
           max_tokens: MAX_TOKENS,
+          stream: false,
+          chat_template_kwargs: { enable_thinking: false },
         };
 
         const controller = new AbortController();
@@ -388,7 +390,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans T
     <div class="meta">
       <span>📅 ${dateDisplay}（週${weekday}）</span>
       <span>📊 ${totalCount} 篇文獻</span>
-      <span>Powered by PubMed + Zhipu AI</span>
+      <span>Powered by PubMed + NVIDIA AI</span>
     </div>
   </div>
 
@@ -428,9 +430,9 @@ function esc(str) {
 
 async function main() {
   const opts = parseArgs();
-  const apiKey = process.env.ZHIPU_API_KEY || "";
+  const apiKey = process.env.NVIDIA_API_KEY || "";
   if (!apiKey) {
-    console.error("[ERROR] No API key. Set ZHIPU_API_KEY env var.");
+    console.error("[ERROR] No API key. Set NVIDIA_API_KEY env var.");
     process.exit(1);
   }
   if (!opts.input || !opts.output) {
@@ -456,7 +458,7 @@ async function main() {
     return;
   }
 
-  const analysis = await callZhipuAPI(apiKey, papersData);
+  const analysis = await callNvidiaAPI(apiKey, papersData);
   if (!analysis) {
     console.error("[ERROR] Analysis failed, cannot generate report");
     process.exit(1);
