@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chronic Pain · 纖維肌痛症與慢性疼痛文獻日報 · 2026年8月20日</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans TC',sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.7;min-height:100vh}
+.container{max-width:900px;margin:0 auto;padding:20px}
+.header{text-align:center;padding:48px 20px 32px;background:linear-gradient(135deg,#1e3a5f 0%,#2d1b69 50%,#1a1a2e 100%);border-radius:20px;margin-bottom:32px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(99,102,241,0.1) 0%,transparent 60%);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.header-icon{font-size:64px;margin-bottom:12px;display:block}
+.header h1{font-size:28px;color:#f1f5f9;margin-bottom:6px;letter-spacing:1px}
+.header .subtitle{color:#94a3b8;font-size:15px}
+.header .meta{display:flex;justify-content:center;gap:24px;margin-top:16px;color:#cbd5e1;font-size:14px}
+.header .meta span{display:flex;align-items:center;gap:6px}
+.section-title{font-size:20px;color:#f1f5f9;margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid #334155;display:flex;align-items:center;gap:8px}
+.section-title .icon{font-size:22px}
+.summary-box{background:linear-gradient(135deg,#1e293b 0%,#1a2332 100%);border:1px solid #334155;border-radius:16px;padding:24px;margin:20px 0;font-size:15px;color:#cbd5e1;line-height:1.8}
+.paper-card{background:#1e293b;border:1px solid #334155;border-radius:16px;padding:24px;margin:16px 0;transition:transform 0.2s,box-shadow 0.2s}
+.paper-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3)}
+.paper-card.top-pick{border-left:4px solid #8b5cf6;background:linear-gradient(135deg,#1e293b 0%,#1a1f35 100%)}
+.paper-rank{font-size:24px;font-weight:700;color:#8b5cf6;float:left;margin-right:12px;line-height:1}
+.paper-emoji{font-size:28px;display:inline-block;margin-right:8px}
+.paper-title{font-size:17px;color:#f1f5f9;margin:8px 0;line-height:1.5}
+.paper-journal{font-size:13px;color:#64748b;margin-bottom:8px}
+.paper-summary{font-size:14px;color:#cbd5e1;margin:12px 0;line-height:1.8}
+.paper-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tag{background:#2d1b69;color:#c4b5fd;font-size:12px;padding:3px 10px;border-radius:12px;display:inline-block}
+.utility-badge{font-size:12px;padding:3px 10px;border-radius:12px;display:inline-block;font-weight:600;margin-left:8px}
+.utility-high{background:#065f46;color:#6ee7b7}
+.utility-mid{background:#713f12;color:#fcd34d}
+.utility-low{background:#7f1d1d;color:#fca5a5}
+.pico{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:12px 0;padding:12px;background:#0f172a;border-radius:10px}
+.pico-item{font-size:13px;color:#94a3b8;display:flex;gap:6px}
+.pico-label{background:#8b5cf6;color:#fff;font-weight:700;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:12px}
+.paper-link{display:inline-block;color:#818cf8;text-decoration:none;font-size:14px;margin-top:8px;transition:color 0.2s}
+.paper-link:hover{color:#a78bfa}
+.topic-section{margin:24px 0}
+.topic-bar-row{display:flex;align-items:center;gap:12px;margin:8px 0}
+.topic-label{color:#94a3b8;font-size:14px;min-width:100px;text-align:right}
+.topic-bar-track{flex:1;height:8px;background:#1e293b;border-radius:4px;overflow:hidden}
+.topic-bar-fill{height:100%;background:linear-gradient(90deg,#8b5cf6,#6366f1);border-radius:4px;transition:width 0.5s}
+.topic-count{color:#818cf8;font-size:14px;font-weight:600;min-width:24px}
+.keywords-section{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.keyword{background:#1e293b;border:1px solid #334155;color:#94a3b8;font-size:13px;padding:5px 14px;border-radius:20px}
+.footer{text-align:center;padding:32px 20px;margin-top:40px;border-top:1px solid #1e293b}
+.footer a{color:#818cf8;text-decoration:none;margin:0 8px;font-size:14px}
+.footer a:hover{color:#a78bfa;text-decoration:underline}
+.footer .footer-note{color:#475569;font-size:12px;margin-top:12px}
+.footer .clinic-links{margin:20px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.footer .clinic-links a{background:#1e293b;border:1px solid #334155;padding:10px 20px;border-radius:12px;font-size:14px;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s}
+.footer .clinic-links a:hover{background:#2d1b69;border-color:#8b5cf6;color:#c4b5fd;text-decoration:none}
+@media(max-width:640px){
+  .container{padding:12px}
+  .header h1{font-size:22px}
+  .pico{grid-template-columns:1fr}
+  .topic-label{min-width:80px;font-size:13px}
+  .header .meta{flex-direction:column;gap:8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <span class="header-icon">🩺</span>
+    <h1>Chronic Pain · 纖維肌痛症與慢性疼痛文獻日報</h1>
+    <div class="subtitle">每日自動更新</div>
+    <div class="meta">
+      <span>📅 2026年8月20日（週四）</span>
+      <span>📊 23 篇文獻</span>
+      <span>Powered by PubMed + NVIDIA AI</span>
+    </div>
+  </div>
+
+  <div class="section-title"><span class="icon">📋</span> 今日文獻趨勢</div>
+  <div class="summary-box">今日文獻聚焦於纖維肌痛症的生理機制（如微血管流動、神經代謝變化）、非藥物介入（運動、飲食、裝置治療）以及心理社會因素（如過度警覺、認知效率）對症狀的影響。研究趨勢強調個體差異、長期追蹤與多模式治療的整合性評估。</div>
+
+  <div class="section-title"><span class="icon">⭐</span> 今日精選 TOP Picks</div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#1</div>
+        <div class="paper-emoji">🧠</div>
+        <span class="utility-badge utility-mid">中實用性</span>
+        <h3 class="paper-title">N-甲基-D-天冬氨酸受體調節劑 NYX-2925 在纖維肌痛症患者中的神經影像與臨床效應：一項探索性階段 2 臨床試驗</h3>
+        <div class="paper-journal">Pain reports · Effects of N-methyl-d-aspartate receptor modulation on brain glutamate, functional connectivity, and clinical symptoms in fibromyalgia.</div>
+        <p class="paper-summary">高劑量 NYX-2925 顯著改善疼痛、疲勞與功能，並伴隨前 cingulate 與島葉皮質的谷氨酸降低及功能連接改變，支持其作為神經調節藥物的潛力，儘管後續試驗未重複臨床獲益。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>22 名被診斷為纖維肌痛症的女性</div>
+        <div class="pico-item"><span class="pico-label">I</span>隨機交叉設計中接受安慰劑、20 mg 或 200 mg NYX-2925（NMDAR 調節劑）各 2 週</div>
+        <div class="pico-item"><span class="pico-label">C</span>安慰劑對照</div>
+        <div class="pico-item"><span class="pico-label">O</span>200 mg 劑量顯著改善疼痛、疲勞、纖維肌痛嚴重度與功能；減少背側前 cingulate 岩靜態谷氨酸/酯胺比率（P=0.032）及誘發痛後後島葉皮質谷氨酸/酯胺（P=0.039）；降低背側前 cingulate 與初級體感皮質及 precuneus 的靜態功能連接（20 mg 劑量）</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">神經影像</span><span class="tag">藥物治療</span><span class="tag">神經調節</span><span class="tag">臨床試驗</span><span class="tag">中樞敏感化</span></div>
+        
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#2</div>
+        <div class="paper-emoji">💉</div>
+        <span class="utility-badge utility-mid">中實用性</span>
+        <h3 class="paper-title">纖維肌痛症中惡性微血管流重新分佈是否導致組織缺氧？</h3>
+        <div class="paper-journal">Pain reports · Does maladaptive microvascular flow redistribution cause tissue hypoxia in fibromyalgia?</div>
+        <p class="paper-summary">提出一種新穎假設：纖維肌痛症患者的組織缺氧可能源於毛細血管層級的血流分佈異常（優先流經低阻�血管而非交換毛細血管），解釋全身氧氣正常但局部缺氧的矛盾現象。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>纖維肌痛症患者（概念模型，非直接受試者研究）</div>
+        <div class="pico-item"><span class="pico-label">I</span>無（理論模型與迴歸解釋）</div>
+        <div class="pico-item"><span class="pico-label">C</span>無對照組</div>
+        <div class="pico-item"><span class="pico-label">O</span>提出惡性微血管流重新分佈導致毛細血管血流減少、局部組織氧氣供應不足、乳酸積累，可能促成疼痛、壓痛與疲勞。</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">疼痛機制</span><span class="tag">神經科學</span><span class="tag">免疫學</span><span class="tag">血液學</span></div>
+        
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#3</div>
+        <div class="paper-emoji">👁️</div>
+        <span class="utility-badge utility-high">高實用性</span>
+        <h3 class="paper-title">纖維肌痛症婦女在日常活動中的疼痛過度警覺與靜息疼痛之關聯：橫斷面觀察研究</h3>
+        <div class="paper-journal">Clinical rheumatology · Pain hypervigilance is associated with daily-activity pain beyond resting pain in women with fibromyalgia: a cross-sectional observational study.</div>
+        <p class="paper-summary">疼痛過度警覺獨立預測日常活動疼痛（ADL pain），即使控制靜息疼痛後仍顯著相關，提示心理過程在功能性疼痛中的關鍵調節作用。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>124 名患有纖維肌痛症的婦女</div>
+        <div class="pico-item"><span class="pico-label">I</span>無介入（橫斷面觀察）</div>
+        <div class="pico-item"><span class="pico-label">C</span>無對照組</div>
+        <div class="pico-item"><span class="pico-label">O</span>靜息疼痛（B=0.254, p=0.009）與疼痛過度警覺（B=0.054, p=0.005）皆獨立關聯較高 ADL 疼痛；認知效率指標（OCI）顯示弱負向關聯（p=0.052，邊緣顯著）。</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">心理治療</span><span class="tag">正念</span><span class="tag">CBT</span><span class="tag">生活品質</span><span class="tag">社會心理</span></div>
+        
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#4</div>
+        <div class="paper-emoji">📊</div>
+        <span class="utility-badge utility-high">高實用性</span>
+        <h3 class="paper-title">纖維肌痛症患者的資料驅動表型在重複臨床評估中的縱向穩定性</h3>
+        <div class="paper-journal">Pain reports · Longitudinal stability of data-driven fibromyalgia phenotypes across repeated clinical assessments.</div>
+        <p class="paper-summary">透過無監督聚類識別出兩個持續穩定的纖維肌痛症表型（輕度/保留功能 vs 重度/全球性受損），在 6 個月追蹤中約 65% 的參與者維持原表型，支持其作為持久臨床構念的效度。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>821 名來自兩個學術醫療中心的纖維肌痛症成人</div>
+        <div class="pico-item"><span class="pico-label">I</span>以基線資料建立表型模型，應用於隨訪時點（第 2 次與第 3 次訪視）</div>
+        <div class="pico-item"><span class="pico-label">C</span>基線表型分配 vs 隨訪時點表型分配</div>
+        <div class="pico-item"><span class="pico-label">O</span>61.9% (visit 1→2) 與 64.8% (visit 2→3) 維持基線表型；轉變主要發生在相鄰嚴重度表型間；三次以上訪視者表型高度穩定。</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">診斷</span><span class="tag">系統性回顧</span><span class="tag">生物標記</span><span class="tag">臨床試驗</span></div>
+        
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#5</div>
+        <div class="paper-emoji">🥗</div>
+        <span class="utility-badge utility-mid">中實用性</span>
+        <h3 class="paper-title">純素地中海飲食對纖維肌痛症婦女之心臟代謝與症狀的影響：FIBROVEG 研究</h3>
+        <div class="paper-journal">Nutrition (Burbank, Los Angeles County, Calif.) · Vegan versus traditional Mediterranean diet effects on cardiometabolic outcomes in women with fibromyalgia:FIBROVEG study.</div>
+        <p class="paper-summary">六週純素地中海飲食比傳統地中海飲食顯著降低 LDL-C（-21.2 mg/dL）及甘油三酯（-27.4 mg/dL），並顯著改善纖維肌痛衝擊問卷（FIQ）疼痛項目（-1.88），支持其作為纖維肌痛症的飲食干預策略。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>22 名患有纖維肌痛症的婦女</div>
+        <div class="pico-item"><span class="pico-label">I</span>隨機分配至純素地中海飲食（VegMedDiet，n=11）或傳統地中海飲食（MedDiet，n=11），熱量與巨量營養素匹配，為期 6 週</div>
+        <div class="pico-item"><span class="pico-label">C</span>傳統地中海飲食對照組</div>
+        <div class="pico-item"><span class="pico-label">O</span>VegMedDiet 組 LDL-C 降低 -21.2 mg/dL (95% CI: -38.3 to -4.08)，甘油三酯降低 -27.4 mg/dL (95% CI: -52.1 to -2.73)，FIQ 疼痛項目改善 -1.88 (95% CI: -2.99 to -0.77, P=0.002)</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">營養與飲食</span><span class="tag">心血管</span><span class="tag">生活品質</span><span class="tag">隨機對照試驗</span></div>
+        
+      </div>
+  <div class="section-title"><span class="icon">📚</span> 其他值得關注的文獻</div>
+      <div class="paper-card">
+        <div class="paper-emoji">📋</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">慢性疼痛登記冊的特徵：範疇性回顧</h3>
+        <div class="paper-journal">Pain reports</div>
+        <p class="paper-summary">全球慢性疼痛登記冊主要集中在高收入國家，資料標準不一，缺乏機制與社經變數，限制其在全球研究與政策中的比較性與公平性。</p>
+        <div class="paper-tags"><span class="tag">慢性疼痛</span><span class="tag">流行病學</span><span class="tag">系統性回顧</span><span class="tag">生物標記</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">🧘</div>
+        <span class="utility-badge utility-high">高</span>
+        <h3 class="paper-title">傳統中國運動於肌肉骨骼疾病的療效與證據確定性：傘形回顧</h3>
+        <div class="paper-journal">British journal of sports medicine</div>
+        <p class="paper-summary">太極拳、八段錦等傳統中國運動在膝骨關節炎中具有高確定性證據改善身體功能、心理健康與睡眠品質（尤其纖維肌痛症），且運動時長、頻率與總量對療效有正向影響。</p>
+        <div class="paper-tags"><span class="tag">運動治療</span><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">系統性回顧</span><span class="tag">生活品質</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">🧠</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">創傷性腦損傷後酪胺激酶通路在疼痛與情緒障礙病理中的角色</h3>
+        <div class="paper-journal">Brain, behavior, &amp; immunity - health</div>
+        <p class="paper-summary">腸胺酸代謝的酪胺激酶通路在創傷性腦損傷後失調，與慢性疼痛（含纖維肌痛症）及憂鬱症相關，是神經免疫介入的潛在標的。</p>
+        <div class="paper-tags"><span class="tag">慢性疼痛</span><span class="tag">纖維肌痛症</span><span class="tag">免疫學</span><span class="tag">神經科學</span><span class="tag">神經調節</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">💊</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">神經遷移痛中 TRPA1 拮抗劑的前臨床證據：系統性回顧與螢光分析</h3>
+        <div class="paper-journal">European journal of pharmacology</div>
+        <p class="paper-summary">TRPA1 拮抗劑在多種神經遷移痛模型（含纖維肌痛症）中一致減少機械性與冷性過痛，偏頭痛與缺血後疼痛模型證據最強，支持其轉化研究潛力。</p>
+        <div class="paper-tags"><span class="tag">慢性疼痛</span><span class="tag">纖維肌痛症</span><span class="tag">神經科學</span><span class="tag">藥物治療</span><span class="tag">系統性回顧</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">🌿</div>
+        <span class="utility-badge utility-low">低</span>
+        <h3 class="paper-title">迷迭香提取物及其生物活性代謝物在小鼠纖維肌痛症模型中的止痛與止過痛作用</h3>
+        <div class="paper-journal">Journal of ethnopharmacology</div>
+        <p class="paper-summary">迷迭香乙醇提取物及其代謝物（如橙皮素、咖啡酸、檸檬烯）在尿epper引發的小鼠纖維肌痛症模型中顯著減少機械熱過痛，支持其作為天然鎮痛藥物的潛力。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">藥物治療</span><span class="tag">民族藥學</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">🔬</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">纖維肌痛症的基因與微小RNA整合分析揭示發炎與結構特徵，並探討手法治療後的分子調節</h3>
+        <div class="paper-journal">Omics : a journal of integrative biology</div>
+        <p class="paper-summary">識別出纖維肌痛症的發炎（IL6, TNF, CXCL8, STAT1）與結構（COL1A1, COL3A1, FN1, ITGB1）兩個主要分子軸，並發現調節 miRNA 下降；手法治療後發炎基因下降、結構基因上升，顯示部分可逆性。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">生物標記</span><span class="tag">神經科學</span><span class="tag">免疫學</span><span class="tag">復健治療</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">🥄</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">高活度埃勒斯-丹洛斯證候群與高活度譜系障礙患者慢性胃腸症狀與共病的螢光分析</h3>
+        <div class="paper-journal">Alimentary pharmacology &amp; therapeutics</div>
+        <p class="paper-summary">超活躍型 EDS/HSD 患者胃腸症狀風險是對照組的 4.29 倍，超過六成報告至少一種慢性胃腸症狀，纖維肌痛症為常見共病（27.9%），提示腸腦軸功能失調的廣泛影響。</p>
+        <div class="paper-tags"><span class="tag">慢性疼痛</span><span class="tag">纖維肌痛症</span><span class="tag">消化系統</span><span class="tag">併發症</span><span class="tag">系統性回顧</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">🏥</div>
+        <span class="utility-badge utility-high">高</span>
+        <h3 class="paper-title">膝關節置換術後纖維肌痛症患者的術後併發症風險：大樣本回顧隊列研究</h3>
+        <div class="paper-journal">The journal of knee surgery</div>
+        <p class="paper-summary">即使控制年齡、性別、種族、保險、共病、吸煙與阿片類藥物使用後，纖維肌痛症患者接受全膝關節置換術後，仍具有較高的術後低血壓、貧血、腸梗阻、尿潴留及譫妄風險。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">手術風險</span><span class="tag">復健治療</span><span class="tag">疼痛管理</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">⚡</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">可穿戴生物電刺激裝置於復健中的現狀：範疇性回顧</h3>
+        <div class="paper-journal">American journal of physical medicine &amp; rehabilitation</div>
+        <p class="paper-summary">可穿戴生物電刺激裝置在纖維肌痛症、腰背痛與步態異常中顯示潛在益處，但證據仍屬初步，應視為標準復健的補充而非替代方案。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">復健治療</span><span class="tag">物理治療</span><span class="tag">身心醫學</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">👩‍⚕️</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">醫護人員對纖維肌痛症管理的過去不確定性與現在信心：質性研究</h3>
+        <div class="paper-journal">International journal of qualitative studies on health and well-being</div>
+        <p class="paper-summary">醫護人員的信心來源於共享的臨床心智模型（強調壓力與生活經驗）、團隊協作與反思實踐，而非僅憋知識積累，支持建立具體、可執行的自我管理支援框架。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">心理治療</span><span class="tag">社會心理</span><span class="tag">身心醫學</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">📈</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">挪威肌肉骨骼疾病患者兩年治療軌跡：以登記為基礎的隊列研究</h3>
+        <div class="paper-journal">Scandinavian journal of primary health care</div>
+        <p class="paper-summary">約 75% 的肌肉骨骼疾病患者為低醫療使用者，5% 為高使用者（主要由持續物理治療驅動），教育程度與出生國影響治療模式，但高使用與此兩因素無關。</p>
+        <div class="paper-tags"><span class="tag">慢性疼痛</span><span class="tag">纖維肌痛症</span><span class="tag">流行病學</span><span class="tag">復健治療</span><span class="tag">醫療資源使用</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">🌿</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">大麻素組合治療三種慢性疼痛的真實世界證據研究</h3>
+        <div class="paper-journal">Clinical therapeutics</div>
+        <p class="paper-summary">在纖維肌痛症、類風濕性關節炎與膝/髖骨關節炎患者中，不同大麻素組合（CBD/THC、CBDA/CBGA/CBC、CBD/CBDA）在 12 週內改善疼痛、睡眠與身體功能，但認知功能未見改善；非醉嗨大麻素（CBD/CBDA）可能在減少致醉風險方面具優勢。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">藥物治療</span><span class="tag">真實世界證據</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">💧</div>
+        <span class="utility-badge utility-low">低</span>
+        <h3 class="paper-title">利用分子印刻聚合物在人工汗液中非侵入性檢測皮質醇：Talanta</h3>
+        <div class="paper-journal">Talanta</div>
+        <p class="paper-summary">以分子印刻聚合物（MIP）為基礎的電化學感測器成功在人工汗液中選偵測皮質醇，偵測下限達 8.2 pg/mL，具可重複使用性，為壓力相關疾病（含纖維肌痛症）提供可穿戴生物標記監測的潛力。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">生物標記</span><span class="tag">神經內分泌</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">🏥</div>
+        <span class="utility-badge utility-high">高</span>
+        <h3 class="paper-title">纖維肌痛症是總膝關節置換術後術後併發症的危險因子：National Inpatient Sample 回顧性隊列研究</h3>
+        <div class="paper-journal">The journal of knee surgery</div>
+        <p class="paper-summary">即使控制年齡、性別、種族、保險、共病、吸煙與阿片類藥物使用後，纖維肌痛症患者接受全膝關節置換術後，仍具有較高的術後低血壓、貧血、腸梗阻、尿潴留及譫妄風險。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">手術風險</span><span class="tag">復健治療</span><span class="tag">疼痛管理</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">🦠</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">長新冠中樞敏感化與自律神經負荷、腦部灌流不足及神經發炎的關聯</h3>
+        <div class="paper-journal">Journal of the neurological sciences</div>
+        <p class="paper-summary">長新冠患者中樞敏感化盛行率達 81%，並與更高自律神經症狀負荷、腦部血流速度下降及 IL-6 上升相關，提示神經血管與神經發炎可能是其病理機制。</p>
+        <div class="paper-tags"><span class="tag">慢性疼痛</span><span class="tag">纖維肌痛症</span><span class="tag">中樞敏感化</span><span class="tag">神經科學</span><span class="tag">免疫學</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">💡</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">早晨藍光療法對原發性及併發失眠成人之睡眠與日間症狀的效果：隨機對照試驗系統性回顧與螢光分析</h3>
+        <div class="paper-journal">International journal of nursing studies</div>
+        <p class="paper-summary">早晨藍光療法改善主觀睡眠品質、減少過度日間嗜睡及多項客觀睡眠參數（如入睡潛伏度、睡眠效率），但未顯著減少疲勞，部分效果受裝置類型與干預時長調節。</p>
+        <div class="paper-tags"><span class="tag">慢性疼痛</span><span class="tag">纖維肌痛症</span><span class="tag">睡眠醫學</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">💬</div>
+        <span class="utility-badge utility-low">低</span>
+        <h3 class="paper-title">關於 Nimbi 等人論文的批評：將 Nociplastic 疼痛的心理變數群聚分析理論與實證混為一談</h3>
+        <div class="paper-journal">Journal of psychosomatic research</div>
+        <p class="paper-summary">無摘要，顯為評論性文章，質疑心理變數群聚研究過度解讀其臨床意義。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">心理治療</span><span class="tag">社會心理</span></div>
+        
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">💔</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">抑鬱、疼痛與功能障礙在纖維肌痛症、類風濕性關節炎與系統性紅斑性狼瘡橫向條件下的關聯與中介模型</h3>
+        <div class="paper-journal">Journal of psychosomatic research</div>
+        <p class="paper-summary">纖維肌痛症患者憂鬱、疼痛、中樞敏感化與功能障礙水平最高，疼痛部分中介憂鬱對功能障礙的影響，提示 RA 與 SLE 亦共享疼痛放大機制，支持整合性治療。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">憂鬱症</span><span class="tag">心理治療</span><span class="tag">復健治療</span></div>
+        
+      </div>
+
+  <div class="section-title"><span class="icon">📊</span> 主題分佈</div><div class="topic-section">
+        <div class="topic-bar-row">
+          <span class="topic-label">纖維肌痛症</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:100%"></div></div>
+          <span class="topic-count">18</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">慢性疼痛</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:67%"></div></div>
+          <span class="topic-count">12</span>
+        </div></div>
+  <div class="section-title"><span class="icon">🏷️</span> 關鍵字</div><div class="keywords-section"><span class="keyword">纖維肌痛症</span><span class="keyword">NMDAR 調節</span><span class="keyword">微血管流動</span><span class="keyword">疼痛過度警覺</span><span class="keyword">表型穩定性</span><span class="keyword">純素地中海飲食</span><span class="keyword">傳統中國運動</span><span class="keyword">手術併發症風險</span><span class="keyword">生物標記</span><span class="keyword">心理社會因素</span></div>
+
+  <div class="footer">
+    <div class="clinic-links">
+      <a href="https://www.leepsyclinic.com/" target="_blank">🏥 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" target="_blank">📩 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" target="_blank">☕ Buy me a coffee</a>
+    </div>
+    <div class="footer-note">
+      資料來源：PubMed · 分析模型：nvidia/nemotron-3-super-120b-a12b<br>
+      <a href="https://github.com/u8901006/chronic-pain-fibromyalgia" target="_blank">GitHub</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
