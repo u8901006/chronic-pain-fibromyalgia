@@ -3,7 +3,7 @@ import { writeFileSync, readFileSync, existsSync, mkdirSync } from "fs";
 import { resolve, dirname } from "path";
 
 const API_BASE = process.env.NVIDIA_API_BASE || "https://integrate.api.nvidia.com/v1";
-const MODELS = ["nvidia/nemotron-3-super-120b-a12b", "nvidia/nemotron-3-nano-30b-a3b"];
+const MODELS = ["nvidia/nemotron-3-super-120b-a12b", "nvidia/nemotron-3.5-lightning-30b-a3b"];
 const MAX_TOKENS = 16384;
 const TIMEOUT_MS = 660000;
 
@@ -223,6 +223,7 @@ ${papersText}
         console.error(
           `[INFO] Analysis complete: ${(result.top_picks || []).length} top picks, ${(result.all_papers || []).length} total`
         );
+        result.model_used = model;
         return result;
       } catch (e) {
         if (e.name === "AbortError") {
@@ -410,7 +411,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans T
       <a href="https://buymeacoffee.com/CYlee" target="_blank">☕ Buy me a coffee</a>
     </div>
     <div class="footer-note">
-      資料來源：PubMed · 分析模型：${MODELS[0]}<br>
+      資料來源：PubMed · 分析模型：${esc(analysis.model_used || "未使用 AI（無新文獻）")}<br>
       <a href="https://github.com/u8901006/chronic-pain-fibromyalgia" target="_blank">GitHub</a>
     </div>
   </div>
