@@ -1,9 +1,6 @@
 name: Chronic Pain Daily Report
 
 on:
-  push:
-    branches: ["main"]
-    paths: [".github/workflows/daily-report.yml"]
   schedule:
     - cron: "0 6 * * *" # UTC 06:00 = 台北時間 14:00
   workflow_dispatch:
