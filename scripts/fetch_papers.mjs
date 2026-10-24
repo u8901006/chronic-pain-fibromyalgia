@@ -40,15 +40,46 @@ function buildDateFilter(days) {
   return `"${lookback}"[Date - Publication] : "3000"[Date - Publication]`;
 }
 
+// NCBI permits three requests per second without an API key.
+let lastRequestAt = 0;
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+async function requestPubMed(url, timeoutMs) {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    await delay(Math.max(0, 350 - (Date.now() - lastRequestAt)));
+    lastRequestAt = Date.now();
+    let resp;
+    try {
+      resp = await fetch(url, { headers: HEADERS, signal: AbortSignal.timeout(timeoutMs) });
+    } catch (error) {
+      if (attempt === 2) throw error;
+      await delay(1000 * 2 ** attempt);
+      continue;
+    }
+    if (resp.ok) return resp;
+    const error = new Error(`PubMed HTTP ${resp.status}`);
+    if ((resp.status === 429 || resp.status >= 500) && attempt < 2) {
+      const retryAfter = Number(resp.headers.get("retry-after"));
+      const wait = retryAfter > 0 ? retryAfter * 1000 : 1000 * 2 ** attempt;
+      await delay(Math.min(wait, 60000));
+      continue;
+    }
+    throw error;
+  }
+}
+
 async function searchPapers(query, retmax = 50) {
   const url = `${PUBMED_SEARCH}?db=pubmed&term=${encodeURIComponent(query)}&retmax=${retmax}&sort=date&retmode=json`;
   try {
-    const resp = await fetch(url, { headers: HEADERS, signal: AbortSignal.timeout(30000) });
+    const resp = await requestPubMed(url, 30000);
     const data = await resp.json();
-    return data?.esearchresult?.idlist || [];
+    if (!Array.isArray(data?.esearchresult?.idlist)) {
+      throw new Error("PubMed search returned no valid PMID list");
+    }
+    return data.esearchresult.idlist;
   } catch (e) {
     console.error(`[ERROR] PubMed search failed: ${e.message}`);
-    return [];
+    throw e;
   }
 }
 
@@ -57,18 +88,22 @@ async function fetchDetails(pmids) {
   const ids = pmids.join(",");
   const url = `${PUBMED_FETCH}?db=pubmed&id=${ids}&retmode=xml`;
   try {
-    const resp = await fetch(url, { headers: HEADERS, signal: AbortSignal.timeout(60000) });
+    const resp = await requestPubMed(url, 60000);
     const xml = await resp.text();
-    return parseXmlPapers(xml);
+    const papers = parseXmlPapers(xml);
+    if (!papers.length) {
+      throw new Error(`PubMed returned no parseable articles for ${pmids.length} requested PMIDs`);
+    }
+    return papers;
   } catch (e) {
     console.error(`[ERROR] PubMed fetch failed: ${e.message}`);
-    return [];
+    throw e;
   }
 }
 
 function parseXmlPapers(xml) {
   const papers = [];
-  const articleRegex = /<PubmedArticle>([\s\S]*?)<\/PubmedArticle>/g;
+  const articleRegex = /<PubmedArticle(?:\s[^>]*)?>([\s\S]*?)<\/PubmedArticle>/g;
   let match;
   while ((match = articleRegex.exec(xml)) !== null) {
     const block = match[1];
@@ -109,9 +144,8 @@ function parseXmlPapers(xml) {
 }
 
 function extractTag(xml, tag) {
-  const openTag = tag.startsWith("<") ? tag : `<${tag}>`;
-  const closeTag = tag.startsWith("<") ? tag.replace("<", "</") : `</${tag}>`;
-  const regex = new RegExp(`${escapeRegex(openTag)}([\\s\\S]*?)${escapeRegex(closeTag)}`);
+  const name = escapeRegex(tag.replace(/[<>]/g, ""));
+  const regex = new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)</${name}>`);
   const match = xml.match(regex);
   return match ? stripTags(match[1]).trim() : "";
 }
@@ -188,7 +222,7 @@ async function main() {
   const papers = await fetchDetails(pmidsToFetch);
   console.error(`[INFO] Fetched details for ${papers.length} papers`);
 
-  newPmids.forEach((id) => seenPmids.add(id));
+  papers.forEach((paper) => { if (paper.pmid) seenPmids.add(paper.pmid); });
   saveSeenPmids(seenPmids);
 
   const output = {
