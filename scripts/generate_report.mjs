@@ -442,6 +442,10 @@ async function main() {
   }
 
   const papersData = loadPapers(opts.input);
+  if (!papersData?.papers?.length && existsSync(opts.output)) {
+    console.error("[INFO] No new papers; preserving existing report");
+    return;
+  }
   if (!papersData?.papers?.length) {
     console.error("[WARN] No papers found, generating empty report");
     const analysis = {
