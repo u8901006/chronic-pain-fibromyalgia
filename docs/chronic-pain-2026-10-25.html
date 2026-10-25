@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chronic Pain · 纖維肌痛症與慢性疼痛文獻日報 · 2026年10月25日</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans TC',sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.7;min-height:100vh}
+.container{max-width:900px;margin:0 auto;padding:20px}
+.header{text-align:center;padding:48px 20px 32px;background:linear-gradient(135deg,#1e3a5f 0%,#2d1b69 50%,#1a1a2e 100%);border-radius:20px;margin-bottom:32px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(99,102,241,0.1) 0%,transparent 60%);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.header-icon{font-size:64px;margin-bottom:12px;display:block}
+.header h1{font-size:28px;color:#f1f5f9;margin-bottom:6px;letter-spacing:1px}
+.header .subtitle{color:#94a3b8;font-size:15px}
+.header .meta{display:flex;justify-content:center;gap:24px;margin-top:16px;color:#cbd5e1;font-size:14px}
+.header .meta span{display:flex;align-items:center;gap:6px}
+.section-title{font-size:20px;color:#f1f5f9;margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid #334155;display:flex;align-items:center;gap:8px}
+.section-title .icon{font-size:22px}
+.summary-box{background:linear-gradient(135deg,#1e293b 0%,#1a2332 100%);border:1px solid #334155;border-radius:16px;padding:24px;margin:20px 0;font-size:15px;color:#cbd5e1;line-height:1.8}
+.paper-card{background:#1e293b;border:1px solid #334155;border-radius:16px;padding:24px;margin:16px 0;transition:transform 0.2s,box-shadow 0.2s}
+.paper-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3)}
+.paper-card.top-pick{border-left:4px solid #8b5cf6;background:linear-gradient(135deg,#1e293b 0%,#1a1f35 100%)}
+.paper-rank{font-size:24px;font-weight:700;color:#8b5cf6;float:left;margin-right:12px;line-height:1}
+.paper-emoji{font-size:28px;display:inline-block;margin-right:8px}
+.paper-title{font-size:17px;color:#f1f5f9;margin:8px 0;line-height:1.5}
+.paper-journal{font-size:13px;color:#64748b;margin-bottom:8px}
+.paper-summary{font-size:14px;color:#cbd5e1;margin:12px 0;line-height:1.8}
+.paper-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tag{background:#2d1b69;color:#c4b5fd;font-size:12px;padding:3px 10px;border-radius:12px;display:inline-block}
+.utility-badge{font-size:12px;padding:3px 10px;border-radius:12px;display:inline-block;font-weight:600;margin-left:8px}
+.utility-high{background:#065f46;color:#6ee7b7}
+.utility-mid{background:#713f12;color:#fcd34d}
+.utility-low{background:#7f1d1d;color:#fca5a5}
+.pico{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:12px 0;padding:12px;background:#0f172a;border-radius:10px}
+.pico-item{font-size:13px;color:#94a3b8;display:flex;gap:6px}
+.pico-label{background:#8b5cf6;color:#fff;font-weight:700;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:12px}
+.paper-link{display:inline-block;color:#818cf8;text-decoration:none;font-size:14px;margin-top:8px;transition:color 0.2s}
+.paper-link:hover{color:#a78bfa}
+.topic-section{margin:24px 0}
+.topic-bar-row{display:flex;align-items:center;gap:12px;margin:8px 0}
+.topic-label{color:#94a3b8;font-size:14px;min-width:100px;text-align:right}
+.topic-bar-track{flex:1;height:8px;background:#1e293b;border-radius:4px;overflow:hidden}
+.topic-bar-fill{height:100%;background:linear-gradient(90deg,#8b5cf6,#6366f1);border-radius:4px;transition:width 0.5s}
+.topic-count{color:#818cf8;font-size:14px;font-weight:600;min-width:24px}
+.keywords-section{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.keyword{background:#1e293b;border:1px solid #334155;color:#94a3b8;font-size:13px;padding:5px 14px;border-radius:20px}
+.footer{text-align:center;padding:32px 20px;margin-top:40px;border-top:1px solid #1e293b}
+.footer a{color:#818cf8;text-decoration:none;margin:0 8px;font-size:14px}
+.footer a:hover{color:#a78bfa;text-decoration:underline}
+.footer .footer-note{color:#475569;font-size:12px;margin-top:12px}
+.footer .clinic-links{margin:20px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.footer .clinic-links a{background:#1e293b;border:1px solid #334155;padding:10px 20px;border-radius:12px;font-size:14px;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s}
+.footer .clinic-links a:hover{background:#2d1b69;border-color:#8b5cf6;color:#c4b5fd;text-decoration:none}
+@media(max-width:640px){
+  .container{padding:12px}
+  .header h1{font-size:22px}
+  .pico{grid-template-columns:1fr}
+  .topic-label{min-width:80px;font-size:13px}
+  .header .meta{flex-direction:column;gap:8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <span class="header-icon">🩺</span>
+    <h1>Chronic Pain · 纖維肌痛症與慢性疼痛文獻日報</h1>
+    <div class="subtitle">每日自動更新</div>
+    <div class="meta">
+      <span>📅 2026年10月25日（週日）</span>
+      <span>📊 14 篇文獻</span>
+      <span>Powered by PubMed + NVIDIA AI</span>
+    </div>
+  </div>
+
+  <div class="section-title"><span class="icon">📋</span> 今日文獻趨勢</div>
+  <div class="summary-box">本日文獻揭示纖維肌痛症（FMS）痛覺機制呈現「狀態相關性」：急性期炎症可能為適應性回復，而慢性FMS則傾向於免疫失調；此外，心理因子如恐懼與災難化在青少年FMS長期功能復健中關鍵，且性別與背景顯著影響患者 sick role 的承認度。研究重點從傳統炎症假說轉向神經免疫調節與心理介入的雙向結合。</div>
+
+  <div class="section-title"><span class="icon">⭐</span> 今日精選 TOP Picks</div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#1</div>
+        <div class="paper-emoji">🔬</div>
+        <span class="utility-badge utility-high">高實用性</span>
+        <h3 class="paper-title">State-dependent roles of inflammation across pain conditions: insights from human transcriptomics.</h3>
+        <div class="paper-journal">British journal of anaesthesia · State-dependent roles of inflammation across pain conditions: insights from human transcriptomics.</div>
+        <p class="paper-summary">研究發現炎症在疼痛狀態中扮演不同角色：急性及術後疼痛中，較高的發炎活性與較佳復原相關；慢性局限性疼痛則出現關聯反轉（發炎較高卻伴較低痛強與較差長期預後）；全身性疼痛（如FMS）則伴隨巨噬細胞相關發炎活性與痛嚴度、持續性正向相關，提示發炎由適應性轉向失調。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>七個人類疼痛群組的近500例血樣，含急性骨骨肉痛、術後、慢性局限性及全身性疼痛</div>
+        <div class="pico-item"><span class="pico-label">I</span>無（觀察性轉錄組學分析}</div>
+        <div class="pico-item"><span class="pico-label">C</span>不同疼痛狀態間之比較</div>
+        <div class="pico-item"><span class="pico-label">O</span>發炎活性與痛強、復原軌跡、長期預後之關聯</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">疼痛機制</span><span class="tag">免疫學</span><span class="tag">神經科學</span><span class="tag">轉錄組學</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42926172/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#2</div>
+        <div class="paper-emoji">🧒</div>
+        <span class="utility-badge utility-high">高實用性</span>
+        <h3 class="paper-title">Reduction in Fear of Movement Predicts Long-Term Decreases In Functional Disability Among Adolescents With Juvenile Fibromyalgia.</h3>
+        <div class="paper-journal">The journal of pain · Reduction in Fear of Movement Predicts Long-Term Decreases In Functional Disability Among Adolescents With Juvenile Fibromyalgia.</div>
+        <p class="paper-summary">在青少年纖維肌痛症治療中，3個月內恐懼移動的顯著減少能預測12個月時的功能殘障改善，顯示運動信心是關鍵長期預測因子；痛覺災難化僅在3個月有預測意義。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>N=317 青少年纖維肌痛症患者</div>
+        <div class="pico-item"><span class="pico-label">I</span>認知行為治療(CBT)、漸進式有氧訓練、CBT+神經肌肉訓練</div>
+        <div class="pico-item"><span class="pico-label">C</span>三種治療群比較</div>
+        <div class="pico-item"><span class="pico-label">O</span>3個月及12個月功能殘障變化</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">心理治療</span><span class="tag">CBT</span><span class="tag">復健治療</span><span class="tag">運動治療</span><span class="tag">疼痛管理</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42925908/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#3</div>
+        <div class="paper-emoji">🩺</div>
+        <span class="utility-badge utility-mid">中實用性</span>
+        <h3 class="paper-title">Recognizing fibromyalgia-like pain phenotypes in lipedema: A narrative review.</h3>
+        <div class="paper-journal">Phlebology · Recognizing fibromyalgia-like pain phenotypes in lipedema: A narrative review.</div>
+        <p class="paper-summary">針對脂肪損患者共現FMS樣疼痛提供臨床判讀框架，區分局部脂肪組織痛與肌肉/中樞敏感化痛，提醒醫務人員避免將廣泛痛自動歸因於FMS，強調組織敏感度、微血管變異與生物力學功能障礙可能為併發因子。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>脂肪損患者，潛在合併FMS樣症狀</div>
+        <div class="pico-item"><span class="pico-label">I</span>無（敘述性回顧}</div>
+        <div class="pico-item"><span class="pico-label">C</span>脂肪損組織痛 vs. 肌肉/中樞敏感化痛</div>
+        <div class="pico-item"><span class="pico-label">O</span>臨床分類與鑑別診斷能力</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">診斷</span><span class="tag">疼痛管理</span><span class="tag">中樞敏感化</span><span class="tag">生物力學</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42921698/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#4</div>
+        <div class="paper-emoji">🌿</div>
+        <span class="utility-badge utility-low">低實用性</span>
+        <h3 class="paper-title">Multi-Target Mechanism of Corydalis yanhusuo Against Fibromyalgia Syndrome: A Network Pharmacology and Molecular Docking Study.</h3>
+        <div class="paper-journal">Journal of visualized experiments : JoVE · Multi-Target Mechanism of Corydalis yanhusuo Against Fibromyalgia Syndrome: A Network Pharmacology and Molecular Docking Study.</div>
+        <p class="paper-summary">透過網路藥理學預測黃連生藥對FMS之多目標機制，發現關鍵靶點包括炎症介質(TNF, IL-6, IL-1β)與雌激素受體(ESR1)，可能透過調節神經炎症與傳遞物質信號發揮效果，但需實驗驗證。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>FMS模型或患者</div>
+        <div class="pico-item"><span class="pico-label">I</span>黃連(Corydalis yanhusuo)活性成分</div>
+        <div class="pico-item"><span class="pico-label">C</span>對照組</div>
+        <div class="pico-item"><span class="pico-label">O</span>多目標通路調節潛力</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">藥物治療</span><span class="tag">神經調節</span><span class="tag">生物標記</span><span class="tag">中醫</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42921774/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#5</div>
+        <div class="paper-emoji">♀️</div>
+        <span class="utility-badge utility-mid">中實用性</span>
+        <h3 class="paper-title">How sex and gender affect the general population&#039;s illness beliefs, emotional reactions and endorsement of the sick role: Evidence from persistent somatic symptoms.</h3>
+        <div class="paper-journal">Journal of psychosomatic research · How sex and gender affect the general population&#039;s illness beliefs, emotional reactions and endorsement of the sick role: Evidence from persistent somatic symptoms.</div>
+        <p class="paper-summary">研究發現女性與類風濕關節炎患者更易被承認為「病人」免除社會責任，而男性更常將持續性症狀視為可控制，FMS背景下男性被視為可控制的傾向可能強化患者的 stigma 与护理障礙。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>N=458 荷蘭族群樣本</div>
+        <div class="pico-item"><span class="pico-label">I</span>實驗 vignette 研究</div>
+        <div class="pico-item"><span class="pico-label">C</span>男/女 × FMS/類風濕關節炎</div>
+        <div class="pico-item"><span class="pico-label">O</span>病 sick role 承認度、可信度評估</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">性別差異</span><span class="tag">社會心理</span><span class="tag">疼痛管理</span><span class="tag">污名化</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42551223/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#6</div>
+        <div class="paper-emoji">💊</div>
+        <span class="utility-badge utility-mid">中實用性</span>
+        <h3 class="paper-title">Reconsolidation blockade with propranolol as a novel treatment for fibromyalgia: A double-blind, randomized placebo-controlled feasibility study.</h3>
+        <div class="paper-journal">The journal of pain · Reconsolidation blockade with propranolol as a novel treatment for fibromyalgia: A double-blind, randomized placebo-controlled feasibility study.</div>
+        <p class="paper-summary">再巩固阻斷治療(FMS患者使用普萘洛爾)顯示可改善痛 interfering 与情緒功能，具可行性與安全性，提示其作為創傷相關疼痛新治療途徑，但需大型試驗驗證。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>N=24 FMS成年人</div>
+        <div class="pico-item"><span class="pico-label">I</span>再巩固阻斷(普萘洛爾) + 痛覺教育影片</div>
+        <div class="pico-item"><span class="pico-label">C</span>安慰劑</div>
+        <div class="pico-item"><span class="pico-label">O</span>痛 interfering 與情緒功能變化</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">心理治療</span><span class="tag">創傷後壓力症候群</span><span class="tag">藥物治療</span><span class="tag">神經科學</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42431386/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#7</div>
+        <div class="paper-emoji">📊</div>
+        <span class="utility-badge utility-mid">中實用性</span>
+        <h3 class="paper-title">Relative differences of brain, sensory, psychological, motor, and tissue domains across musculoskeletal pain conditions: Systematic review and multivariate meta-analyses.</h3>
+        <div class="paper-journal">The journal of pain · Relative differences of brain, sensory, psychological, motor, and tissue domains across musculoskeletal pain conditions: Systematic review and multivariate meta-analyses.</div>
+        <p class="paper-summary">多域系統綜述比較FMS、膝骨關節炎、腰痛與頸痛，證實心理與感官測量的案例對差異最大，FMS在各域差異均 largest，提示多域評估有助於區分骨骼疼痛與中樞敏感化疼痛。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>FMS、膝骨關節炎、腰痛、頸痛 vs. 痛-free 對照</div>
+        <div class="pico-item"><span class="pico-label">I</span>無（觀察性 meta-analysis}</div>
+        <div class="pico-item"><span class="pico-label">C</span>不同骨骼疼痛診斷間比較</div>
+        <div class="pico-item"><span class="pico-label">O</span>各domain(大腦、感官、心理、運動、組織)之標準化差異大小</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">中樞敏感化</span><span class="tag">系統性回顧</span><span class="tag">統合分析</span><span class="tag">疼痛管理</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42543134/" target="_blank">閱讀原文 →</a>
+      </div>
+  <div class="section-title"><span class="icon">📚</span> 其他值得關注的文獻</div>
+      <div class="paper-card">
+        <div class="paper-emoji">🔮</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">Combined Effect of Hypnotic-Cognitive Therapy With Therapeutic Exercise on Quality of Life in Individuals With Fibromyalgia: A Randomized Controlled Trial Protocol.</h3>
+        <div class="paper-journal">Musculoskeletal care</div>
+        <p class="paper-summary">探討HYP-CT(催眯認知治療)與治療性運動結合對FMS患者生活品質(QOL，FIQR)的影響，為期12週，結果將在12週與24週評估，有潛力證實整體介入之可行性。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">心理治療</span><span class="tag">催眠治療</span><span class="tag">復健治療</span><span class="tag">運動治療</span><span class="tag">生活品質</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42863823/" target="_blank">PubMed →</a>
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">🦠</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">Difficult-to- manage and treatment refractory axial Spondyloarthritis: Systematic review and meta-analysis of prevalence and determinants.</h3>
+        <div class="paper-journal">Autoimmunity reviews</div>
+        <p class="paper-summary">大規模 meta-analysis 證實FMS 是軸性類風濕性關節炎難以控制的 strongest 相關因子(OR 3.32)，提示共病FMS 在axSpA 管理中必須納入考量。</p>
+        <div class="paper-tags"><span class="tag">慢性疼痛</span><span class="tag">疼痛機制</span><span class="tag">系統性回顧</span><span class="tag">流行病學</span><span class="tag">併發症</span><span class="tag">藥物治療</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42763066/" target="_blank">PubMed →</a>
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">🧠</div>
+        <span class="utility-badge utility-low">低</span>
+        <h3 class="paper-title">Infralimbic cortex neurostimulation attenuates nociceptive and affective manifestations in a reserpine-induced fibromyalgia model.</h3>
+        <div class="paper-journal">Physiology &amp; behavior</div>
+        <p class="paper-summary">動物研究顯示IL Cortex 神經刺激可減低覺痛、焦慮與抑鬱行為，提示該腦區為FMS 痛覺與情緒調節之潛在調節目標，為神經調治療提供生物學靶點。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">神經影像</span><span class="tag">神經調節</span><span class="tag">rTMS</span><span class="tag">tDCS</span><span class="tag">腦部調節</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42697308/" target="_blank">PubMed →</a>
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">😥</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">Alexithymia moderates brain function during suppression of negative emotions in fibromyalgia.</h3>
+        <div class="paper-journal">Pain</div>
+        <p class="paper-summary">Alexithymia 在FMS 中調節情緒壓抑時的腦功能連結，影響情緒清晰度與內聚焦，提示增強身體感覺意識與情緒理解可能有助於正規化腦功能。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">心理治療</span><span class="tag">Alexithymia</span><span class="tag">神經科學</span><span class="tag">情緒調節</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42683636/" target="_blank">PubMed →</a>
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">👶</div>
+        <span class="utility-badge utility-low">低</span>
+        <h3 class="paper-title">Adjunctive psychological approaches in randomized controlled trials of exercise interventions for pediatric chronic musculoskeletal diseases - A scoping review.</h3>
+        <div class="paper-journal">Journal of back and musculoskeletal rehabilitation</div>
+        <p class="paper-summary">兒童慢性骨骼肌肉疾病中，結合動力學訓練與心理介入(如動機訪談、痛覺教育)顯示潛在效益，但標準化與長證據仍不足，提示多專業合作是趨勢。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">心理治療</span><span class="tag">運動治療</span><span class="tag">兒科</span><span class="tag">多學科</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42130390/" target="_blank">PubMed →</a>
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">🌿</div>
+        <span class="utility-badge utility-low">低</span>
+        <h3 class="paper-title">Antihyperalgesic and antiallodynic effects of Salvia rosmarinus Spenn. extracts and some of their bioactive metabolites in a murine fibromyalgia pain model.</h3>
+        <div class="paper-journal">Journal of ethnopharmacology</div>
+        <p class="paper-summary">迷迭香提取物與其代謝物( hesperidin, caffeic acid, limonene) 在FMS 鼠模型中顯示抗覺痛與抗過敏嚴重度效果，支持天然植物化合物作為緩解中樞敏感化痛的潛在替代方案。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">藥物治療</span><span class="tag">植物藥理</span><span class="tag">中樞敏感化</span><span class="tag">代謝物</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42501926/" target="_blank">PubMed →</a>
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">📄</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">State-dependent roles of inflammation across pain conditions: insights from human transcriptomics.</h3>
+        <div class="paper-journal">British journal of anaesthesia</div>
+        <p class="paper-summary"></p>
+        <div class="paper-tags"></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42926172/" target="_blank">PubMed →</a>
+      </div>
+
+  <div class="section-title"><span class="icon">📊</span> 主題分佈</div><div class="topic-section">
+        <div class="topic-bar-row">
+          <span class="topic-label">纖維肌痛症</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:100%"></div></div>
+          <span class="topic-count">6</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">慢性疼痛</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:83%"></div></div>
+          <span class="topic-count">5</span>
+        </div></div>
+  <div class="section-title"><span class="icon">🏷️</span> 關鍵字</div><div class="keywords-section"><span class="keyword">纖維肌痛症</span><span class="keyword">慢性疼痛</span><span class="keyword">中樞敏感化</span><span class="keyword">疼痛機制</span><span class="keyword">免疫學</span><span class="keyword">神經科學</span><span class="keyword">心理治療</span><span class="keyword">系統性回顧</span><span class="keyword">轉錄組學</span><span class="keyword">性別差異</span></div>
+
+  <div class="footer">
+    <div class="clinic-links">
+      <a href="https://www.leepsyclinic.com/" target="_blank">🏥 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" target="_blank">📩 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" target="_blank">☕ Buy me a coffee</a>
+    </div>
+    <div class="footer-note">
+      資料來源：PubMed · 分析模型：nvidia/nemotron-3.5-lightning-30b-a3b<br>
+      <a href="https://github.com/u8901006/chronic-pain-fibromyalgia" target="_blank">GitHub</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
