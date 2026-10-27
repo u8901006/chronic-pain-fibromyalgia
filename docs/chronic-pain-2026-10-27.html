@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chronic Pain · 纖維肌痛症與慢性疼痛文獻日報 · 2026年10月27日</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans TC',sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.7;min-height:100vh}
+.container{max-width:900px;margin:0 auto;padding:20px}
+.header{text-align:center;padding:48px 20px 32px;background:linear-gradient(135deg,#1e3a5f 0%,#2d1b69 50%,#1a1a2e 100%);border-radius:20px;margin-bottom:32px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(99,102,241,0.1) 0%,transparent 60%);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.header-icon{font-size:64px;margin-bottom:12px;display:block}
+.header h1{font-size:28px;color:#f1f5f9;margin-bottom:6px;letter-spacing:1px}
+.header .subtitle{color:#94a3b8;font-size:15px}
+.header .meta{display:flex;justify-content:center;gap:24px;margin-top:16px;color:#cbd5e1;font-size:14px}
+.header .meta span{display:flex;align-items:center;gap:6px}
+.section-title{font-size:20px;color:#f1f5f9;margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid #334155;display:flex;align-items:center;gap:8px}
+.section-title .icon{font-size:22px}
+.summary-box{background:linear-gradient(135deg,#1e293b 0%,#1a2332 100%);border:1px solid #334155;border-radius:16px;padding:24px;margin:20px 0;font-size:15px;color:#cbd5e1;line-height:1.8}
+.paper-card{background:#1e293b;border:1px solid #334155;border-radius:16px;padding:24px;margin:16px 0;transition:transform 0.2s,box-shadow 0.2s}
+.paper-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3)}
+.paper-card.top-pick{border-left:4px solid #8b5cf6;background:linear-gradient(135deg,#1e293b 0%,#1a1f35 100%)}
+.paper-rank{font-size:24px;font-weight:700;color:#8b5cf6;float:left;margin-right:12px;line-height:1}
+.paper-emoji{font-size:28px;display:inline-block;margin-right:8px}
+.paper-title{font-size:17px;color:#f1f5f9;margin:8px 0;line-height:1.5}
+.paper-journal{font-size:13px;color:#64748b;margin-bottom:8px}
+.paper-summary{font-size:14px;color:#cbd5e1;margin:12px 0;line-height:1.8}
+.paper-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tag{background:#2d1b69;color:#c4b5fd;font-size:12px;padding:3px 10px;border-radius:12px;display:inline-block}
+.utility-badge{font-size:12px;padding:3px 10px;border-radius:12px;display:inline-block;font-weight:600;margin-left:8px}
+.utility-high{background:#065f46;color:#6ee7b7}
+.utility-mid{background:#713f12;color:#fcd34d}
+.utility-low{background:#7f1d1d;color:#fca5a5}
+.pico{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:12px 0;padding:12px;background:#0f172a;border-radius:10px}
+.pico-item{font-size:13px;color:#94a3b8;display:flex;gap:6px}
+.pico-label{background:#8b5cf6;color:#fff;font-weight:700;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:12px}
+.paper-link{display:inline-block;color:#818cf8;text-decoration:none;font-size:14px;margin-top:8px;transition:color 0.2s}
+.paper-link:hover{color:#a78bfa}
+.topic-section{margin:24px 0}
+.topic-bar-row{display:flex;align-items:center;gap:12px;margin:8px 0}
+.topic-label{color:#94a3b8;font-size:14px;min-width:100px;text-align:right}
+.topic-bar-track{flex:1;height:8px;background:#1e293b;border-radius:4px;overflow:hidden}
+.topic-bar-fill{height:100%;background:linear-gradient(90deg,#8b5cf6,#6366f1);border-radius:4px;transition:width 0.5s}
+.topic-count{color:#818cf8;font-size:14px;font-weight:600;min-width:24px}
+.keywords-section{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.keyword{background:#1e293b;border:1px solid #334155;color:#94a3b8;font-size:13px;padding:5px 14px;border-radius:20px}
+.footer{text-align:center;padding:32px 20px;margin-top:40px;border-top:1px solid #1e293b}
+.footer a{color:#818cf8;text-decoration:none;margin:0 8px;font-size:14px}
+.footer a:hover{color:#a78bfa;text-decoration:underline}
+.footer .footer-note{color:#475569;font-size:12px;margin-top:12px}
+.footer .clinic-links{margin:20px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.footer .clinic-links a{background:#1e293b;border:1px solid #334155;padding:10px 20px;border-radius:12px;font-size:14px;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s}
+.footer .clinic-links a:hover{background:#2d1b69;border-color:#8b5cf6;color:#c4b5fd;text-decoration:none}
+@media(max-width:640px){
+  .container{padding:12px}
+  .header h1{font-size:22px}
+  .pico{grid-template-columns:1fr}
+  .topic-label{min-width:80px;font-size:13px}
+  .header .meta{flex-direction:column;gap:8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <span class="header-icon">🩺</span>
+    <h1>Chronic Pain · 纖維肌痛症與慢性疼痛文獻日報</h1>
+    <div class="subtitle">每日自動更新</div>
+    <div class="meta">
+      <span>📅 2026年10月27日（週二）</span>
+      <span>📊 4 篇文獻</span>
+      <span>Powered by PubMed + NVIDIA AI</span>
+    </div>
+  </div>
+
+  <div class="section-title"><span class="icon">📋</span> 今日文獻趨勢</div>
+  <div class="summary-box">本日文獻聚焦於纖維肌痛症生物心理社會評估框架的建立、水療之效比較以及運動對認知功能之廣泛影響。三篇文獻共同強調從單一症狀治療轉向多維度、綜合性介入的趨勢，特別是運動治療在纖維肌痛症與合併認知障礙患者中的認知效益。</div>
+
+  <div class="section-title"><span class="icon">⭐</span> 今日精選 TOP Picks</div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#1</div>
+        <div class="paper-emoji">📋</div>
+        <span class="utility-badge utility-high">高實用性</span>
+        <h3 class="paper-title">從患者友善指南到概念一致性：未來專業纖維肌痛症指南應發展生物心理社會多維度評估框架</h3>
+        <div class="paper-journal">Journal of evidence-based medicine · From Patient-Friendly Guidelines to Conceptual Coherence: Why Future Professional Fibromyalgia Guidelines Should Develop a Biopsychosocial Multidimensional Assessment Framework.</div>
+        <p class="paper-summary">探討纖維肌痛症指南需從單純症狀管理轉向生物心理社會多維度評估，以提升臨床實踐的概念一致性與治療精準度。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>纖維肌痛症患者與臨床醫護人員</div>
+        <div class="pico-item"><span class="pico-label">I</span>發展生物心理社會多維度評估框架</div>
+        <div class="pico-item"><span class="pico-label">C</span>傳統單一維度評估方式</div>
+        <div class="pico-item"><span class="pico-label">O</span>指南概念架構之改善與臨床適用性提升</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">生物心理社會</span><span class="tag">指南開發</span><span class="tag">臨床實踐</span><span class="tag">多維度評估</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42929762/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#2</div>
+        <div class="paper-emoji">💧</div>
+        <span class="utility-badge utility-mid">中實用性</span>
+        <h3 class="paper-title">水療對纖維肌痛症患者之效果是否優於陸上療法？隨機對照試論述</h3>
+        <div class="paper-journal">Physiotherapy · Re. Is aquatic therapy more effective than land-based therapy for fibromyalgia? A randomised controlled trial discussion.</div>
+        <p class="paper-summary">探討水療與陸上療法在纖維肌痛症治療上的效果差異，提供水療作為輔助介入的循證依據。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>纖維肌痛症患者</div>
+        <div class="pico-item"><span class="pico-label">I</span>水療介入</div>
+        <div class="pico-item"><span class="pico-label">C</span>陸上療法</div>
+        <div class="pico-item"><span class="pico-label">O</span>疼痛、功能與生活品質之比較效果</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">水療</span><span class="tag">陸上療法</span><span class="tag">物理治療</span><span class="tag">疼痛管理</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42447603/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#3</div>
+        <div class="paper-emoji">🧠</div>
+        <span class="utility-badge utility-high">高實用性</span>
+        <h3 class="paper-title">力量與有氧訓練對成年人認知健康之效果：系統性複迴分析</h3>
+        <div class="paper-journal">Sports health · Effects of Concurrent Strength and Aerobic Exercise Training on Cognitive Health in Adults With Physiological or Neurocognitive Disorders: Systematic Review With Meta-analysis of Randomized Controlled Trials.</div>
+        <p class="paper-summary">證實同時進行力量與有氧訓練顯著改善中老年臨床人群（包括纖維肌痛症）之全球認知功能，提供運動處方新視角。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>成年人（含纖維肌痛症、代謝症候群、認知障礙）</div>
+        <div class="pico-item"><span class="pico-label">I</span>同時力量與有氧訓練</div>
+        <div class="pico-item"><span class="pico-label">C</span>常規照護或對照組</div>
+        <div class="pico-item"><span class="pico-label">O</span>全球認知功能改善（SMD=0.34）</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">運動治療</span><span class="tag">認知功能</span><span class="tag">系統性複迴</span><span class="tag">中老年健康</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42358083/" target="_blank">閱讀原文 →</a>
+      </div>
+  <div class="section-title"><span class="icon">📚</span> 其他值得關注的文獻</div>
+      <div class="paper-card">
+        <div class="paper-emoji">📋</div>
+        <span class="utility-badge utility-high">高</span>
+        <h3 class="paper-title">從患者友善指南到概念一致性：未來專業纖維肌痛症指南應發展生物心理社會多維度評估框架</h3>
+        <div class="paper-journal">Journal of evidence-based medicine</div>
+        <p class="paper-summary">探討纖維肌痛症指南需從單純症狀管理轉向生物心理社會多維度評估，以提臨床實踐的概念一致性與治療精準度。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">生物心理社會</span><span class="tag">指南開發</span><span class="tag">臨床實踐</span><span class="tag">多維度評估</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42929762/" target="_blank">PubMed →</a>
+      </div>
+
+  <div class="section-title"><span class="icon">📊</span> 主題分佈</div><div class="topic-section">
+        <div class="topic-bar-row">
+          <span class="topic-label">纖維肌痛症</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:100%"></div></div>
+          <span class="topic-count">3</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">慢性疼痛</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:67%"></div></div>
+          <span class="topic-count">2</span>
+        </div></div>
+  <div class="section-title"><span class="icon">🏷️</span> 關鍵字</div><div class="keywords-section"><span class="keyword">纖維肌痛症</span><span class="keyword">慢性疼痛</span><span class="keyword">運動治療</span><span class="keyword">指南開發</span><span class="keyword">水療</span></div>
+
+  <div class="footer">
+    <div class="clinic-links">
+      <a href="https://www.leepsyclinic.com/" target="_blank">🏥 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" target="_blank">📩 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" target="_blank">☕ Buy me a coffee</a>
+    </div>
+    <div class="footer-note">
+      資料來源：PubMed · 分析模型：nvidia/nemotron-3.5-lightning-30b-a3b<br>
+      <a href="https://github.com/u8901006/chronic-pain-fibromyalgia" target="_blank">GitHub</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
