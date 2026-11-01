@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chronic Pain · 纖維肌痛症與慢性疼痛文獻日報 · 2026年11月1日</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans TC',sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.7;min-height:100vh}
+.container{max-width:900px;margin:0 auto;padding:20px}
+.header{text-align:center;padding:48px 20px 32px;background:linear-gradient(135deg,#1e3a5f 0%,#2d1b69 50%,#1a1a2e 100%);border-radius:20px;margin-bottom:32px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(99,102,241,0.1) 0%,transparent 60%);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.header-icon{font-size:64px;margin-bottom:12px;display:block}
+.header h1{font-size:28px;color:#f1f5f9;margin-bottom:6px;letter-spacing:1px}
+.header .subtitle{color:#94a3b8;font-size:15px}
+.header .meta{display:flex;justify-content:center;gap:24px;margin-top:16px;color:#cbd5e1;font-size:14px}
+.header .meta span{display:flex;align-items:center;gap:6px}
+.section-title{font-size:20px;color:#f1f5f9;margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid #334155;display:flex;align-items:center;gap:8px}
+.section-title .icon{font-size:22px}
+.summary-box{background:linear-gradient(135deg,#1e293b 0%,#1a2332 100%);border:1px solid #334155;border-radius:16px;padding:24px;margin:20px 0;font-size:15px;color:#cbd5e1;line-height:1.8}
+.paper-card{background:#1e293b;border:1px solid #334155;border-radius:16px;padding:24px;margin:16px 0;transition:transform 0.2s,box-shadow 0.2s}
+.paper-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3)}
+.paper-card.top-pick{border-left:4px solid #8b5cf6;background:linear-gradient(135deg,#1e293b 0%,#1a1f35 100%)}
+.paper-rank{font-size:24px;font-weight:700;color:#8b5cf6;float:left;margin-right:12px;line-height:1}
+.paper-emoji{font-size:28px;display:inline-block;margin-right:8px}
+.paper-title{font-size:17px;color:#f1f5f9;margin:8px 0;line-height:1.5}
+.paper-journal{font-size:13px;color:#64748b;margin-bottom:8px}
+.paper-summary{font-size:14px;color:#cbd5e1;margin:12px 0;line-height:1.8}
+.paper-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tag{background:#2d1b69;color:#c4b5fd;font-size:12px;padding:3px 10px;border-radius:12px;display:inline-block}
+.utility-badge{font-size:12px;padding:3px 10px;border-radius:12px;display:inline-block;font-weight:600;margin-left:8px}
+.utility-high{background:#065f46;color:#6ee7b7}
+.utility-mid{background:#713f12;color:#fcd34d}
+.utility-low{background:#7f1d1d;color:#fca5a5}
+.pico{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:12px 0;padding:12px;background:#0f172a;border-radius:10px}
+.pico-item{font-size:13px;color:#94a3b8;display:flex;gap:6px}
+.pico-label{background:#8b5cf6;color:#fff;font-weight:700;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:12px}
+.paper-link{display:inline-block;color:#818cf8;text-decoration:none;font-size:14px;margin-top:8px;transition:color 0.2s}
+.paper-link:hover{color:#a78bfa}
+.topic-section{margin:24px 0}
+.topic-bar-row{display:flex;align-items:center;gap:12px;margin:8px 0}
+.topic-label{color:#94a3b8;font-size:14px;min-width:100px;text-align:right}
+.topic-bar-track{flex:1;height:8px;background:#1e293b;border-radius:4px;overflow:hidden}
+.topic-bar-fill{height:100%;background:linear-gradient(90deg,#8b5cf6,#6366f1);border-radius:4px;transition:width 0.5s}
+.topic-count{color:#818cf8;font-size:14px;font-weight:600;min-width:24px}
+.keywords-section{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.keyword{background:#1e293b;border:1px solid #334155;color:#94a3b8;font-size:13px;padding:5px 14px;border-radius:20px}
+.footer{text-align:center;padding:32px 20px;margin-top:40px;border-top:1px solid #1e293b}
+.footer a{color:#818cf8;text-decoration:none;margin:0 8px;font-size:14px}
+.footer a:hover{color:#a78bfa;text-decoration:underline}
+.footer .footer-note{color:#475569;font-size:12px;margin-top:12px}
+.footer .clinic-links{margin:20px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.footer .clinic-links a{background:#1e293b;border:1px solid #334155;padding:10px 20px;border-radius:12px;font-size:14px;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s}
+.footer .clinic-links a:hover{background:#2d1b69;border-color:#8b5cf6;color:#c4b5fd;text-decoration:none}
+@media(max-width:640px){
+  .container{padding:12px}
+  .header h1{font-size:22px}
+  .pico{grid-template-columns:1fr}
+  .topic-label{min-width:80px;font-size:13px}
+  .header .meta{flex-direction:column;gap:8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <span class="header-icon">🩺</span>
+    <h1>Chronic Pain · 纖維肌痛症與慢性疼痛文獻日報</h1>
+    <div class="subtitle">每日自動更新</div>
+    <div class="meta">
+      <span>📅 2026年11月1日（週日）</span>
+      <span>📊 6 篇文獻</span>
+      <span>Powered by PubMed + NVIDIA AI</span>
+    </div>
+  </div>
+
+  <div class="section-title"><span class="icon">📋</span> 今日文獻趨勢</div>
+  <div class="summary-box">今日文獻集中於纖維肌痛症（FM）之運動處方標準化、慢性疼痛與財務毒性之關聯，以及RA中疼痛與炎症不協調之量化指標，提供了改善治療再現性與跨領域評估的新視角。</div>
+
+  <div class="section-title"><span class="icon">⭐</span> 今日精選 TOP Picks</div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#1</div>
+        <div class="paper-emoji">💪</div>
+        <span class="utility-badge utility-high">高實用性</span>
+        <h3 class="paper-title">纖維肌痛婦女之陸上及水上監護性練習介入：al-Andalus 隨機對照試驗 CERT 協定</h3>
+        <div class="paper-journal">Contemporary clinical trials · Land- and water-based supervised exercise intervention for women with fibromyalgia: a CERT-based protocol from the al-&amp;#x10d;andalus randomized controlled trial.</div>
+        <p class="paper-summary">提供纖維肌痛症運動介入之詳細、標準化 CERT 報告，提升再現性與臨床實踐應用。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>南西班牙 35-65 歲被診斷為 FM 婦女（n=180）</div>
+        <div class="pico-item"><span class="pico-label">I</span>24 週三週/次（每次 45-60 分鐘）之多成分有氧、力量與伸展練習（陸上或水上）</div>
+        <div class="pico-item"><span class="pico-label">C</span>常規照護對照組</div>
+        <div class="pico-item"><span class="pico-label">O</span>運動依從度、臨床改善標準化報告</div>
+      </div>
+        <div class="paper-tags"><span class="tag">運動治療</span><span class="tag">纖維肌痛症</span><span class="tag">復健治療</span><span class="tag">臨床試驗</span><span class="tag">CERT</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42830128/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#2</div>
+        <div class="paper-emoji">🔬</div>
+        <span class="utility-badge utility-mid">中實用性</span>
+        <h3 class="paper-title">RA 中疼痛-炎症不協調之持續度量開發與驗證</h3>
+        <div class="paper-journal">Clinical rheumatology · Pain-inflammation discordance in rheumatoid arthritis: fibromyalgia, psychological, and functional correlates of a continuous metric.</div>
+        <p class="paper-summary">在 RA 患者中建立一個連續的疼痛-炎症不協調指標，並證實合併 FM 會顯著影響疼痛體驗。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>200 名埃及 RA 患者（平均年齡 38.5 歲，91% 女性），其中 40% 合併 FM</div>
+        <div class="pico-item"><span class="pico-label">I</span>建立以 z-score 為基礎之持續 PID 計分方法</div>
+        <div class="pico-item"><span class="pico-label">C</span>非 FM RA 患者比較</div>
+        <div class="pico-item"><span class="pico-label">O</span>FM 合併組在疼痛超預期、心理困擾與功能受限方面得分顯著升高</div>
+      </div>
+        <div class="paper-tags"><span class="tag">疼痛機制</span><span class="tag">纖維肌痛症</span><span class="tag">神經科學</span><span class="tag">心理治療</span><span class="tag">疼痛管理</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42754762/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#3</div>
+        <div class="paper-emoji">💰</div>
+        <span class="utility-badge utility-mid">中實用性</span>
+        <h3 class="paper-title">美國成人 rhuematic disease 與癌症歷史之財務毒性比較研究</h3>
+        <div class="paper-journal">Clinical rheumatology · Financial toxicity among US adults with rheumatic disease and prior cancer: a nationally representative cross-sectional study.</div>
+        <p class="paper-summary">揭示 rhuematic disease（包含 FM）患者面臨的高額醫療負擔，特別是 65 歲以下群體。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>美國國調樣本：無病對照、癌症唯一、rhuematic disease 唯一、兩者兼有之成年人</div>
+        <div class="pico-item"><span class="pico-label">I</span>比較不同疾病群體間之財務毒性發生率</div>
+        <div class="pico-item"><span class="pico-label">C</span>無病組別</div>
+        <div class="pico-item"><span class="pico-label">O</span>RD 獨併或與癌症合併者財務毒性最高，成本相關藥物非依從在 RD 組常見</div>
+      </div>
+        <div class="paper-tags"><span class="tag">財務毒性</span><span class="tag">流行病學</span><span class="tag">慢性疼痛</span><span class="tag">社會心理</span><span class="tag">纖維肌痛症</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42773402/" target="_blank">閱讀原文 →</a>
+      </div>
+  <div class="section-title"><span class="icon">📚</span> 其他值得關注的文獻</div>
+      <div class="paper-card">
+        <div class="paper-emoji">💪</div>
+        <span class="utility-badge utility-high">高</span>
+        <h3 class="paper-title">Land- and water-based supervised exercise intervention for women with fibromyalgia: a CERT-based protocol from the al-&amp;#x10d;andalus randomized controlled trial.</h3>
+        <div class="paper-journal">Contemporary clinical trials</div>
+        <p class="paper-summary">本研究依據 CERT 模板，詳細描述 24 週陸上/水上多成分練習對 FM 婦女之有效性與安全性，強調監督與依從度對臨床結果之影響。</p>
+        <div class="paper-tags"><span class="tag">運動治療</span><span class="tag">纖維肌痛症</span><span class="tag">復健治療</span><span class="tag">臨床試驗</span><span class="tag">CERT</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42830128/" target="_blank">PubMed →</a>
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">🔬</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">Pain-inflammation discordance in rheumatoid arthritis: fibromyalgia, psychological, and functional correlates of a continuous metric.</h3>
+        <div class="paper-journal">Clinical rheumatology</div>
+        <p class="paper-summary">提出一個樣本相對 z-score 的持續 PID 指標，證實 FM 合併組在疼痛超預期、心理 distress 與功能受限方面臨床意義顯著。</p>
+        <div class="paper-tags"><span class="tag">疼痛機制</span><span class="tag">纖維肌痛症</span><span class="tag">神經科學</span><span class="tag">心理治療</span><span class="tag">疼痛管理</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42754762/" target="_blank">PubMed →</a>
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">💰</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">Financial toxicity among US adults with rheumatic disease and prior cancer: a nationally representative cross-sectional study.</h3>
+        <div class="paper-journal">Clinical rheumatology</div>
+        <p class="paper-summary">分析 US 國調數據，顯示 rhuematic disease（包含 FM）患者之財務負擔遠高於一般人群，特別是 65 歲以下者，成本相關藥物非依從為主要問題。</p>
+        <div class="paper-tags"><span class="tag">財務毒性</span><span class="tag">流行病學</span><span class="tag">慢性疼痛</span><span class="tag">社會心理</span><span class="tag">纖維肌痛症</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42773402/" target="_blank">PubMed →</a>
+      </div>
+
+  <div class="section-title"><span class="icon">📊</span> 主題分佈</div><div class="topic-section">
+        <div class="topic-bar-row">
+          <span class="topic-label">纖維肌痛症</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:100%"></div></div>
+          <span class="topic-count">4</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">慢性疼痛</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:75%"></div></div>
+          <span class="topic-count">3</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">中樞敏感化</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:25%"></div></div>
+          <span class="topic-count">1</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">疼痛機制</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:50%"></div></div>
+          <span class="topic-count">2</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">心理治療</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:25%"></div></div>
+          <span class="topic-count">1</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">運動治療</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:75%"></div></div>
+          <span class="topic-count">3</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">財務毒性</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:25%"></div></div>
+          <span class="topic-count">1</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">流行病學</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:50%"></div></div>
+          <span class="topic-count">2</span>
+        </div></div>
+  <div class="section-title"><span class="icon">🏷️</span> 關鍵字</div><div class="keywords-section"><span class="keyword">纖維肌痛症</span><span class="keyword">慢性疼痛</span><span class="keyword">運動處方</span><span class="keyword">疼痛-炎症不協調</span><span class="keyword">財務毒性</span></div>
+
+  <div class="footer">
+    <div class="clinic-links">
+      <a href="https://www.leepsyclinic.com/" target="_blank">🏥 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" target="_blank">📩 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" target="_blank">☕ Buy me a coffee</a>
+    </div>
+    <div class="footer-note">
+      資料來源：PubMed · 分析模型：nvidia/nemotron-3.5-lightning-30b-a3b<br>
+      <a href="https://github.com/u8901006/chronic-pain-fibromyalgia" target="_blank">GitHub</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
