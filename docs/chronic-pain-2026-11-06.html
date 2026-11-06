@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chronic Pain · 纖維肌痛症與慢性疼痛文獻日報 · 2026年11月6日</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans TC',sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.7;min-height:100vh}
+.container{max-width:900px;margin:0 auto;padding:20px}
+.header{text-align:center;padding:48px 20px 32px;background:linear-gradient(135deg,#1e3a5f 0%,#2d1b69 50%,#1a1a2e 100%);border-radius:20px;margin-bottom:32px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(99,102,241,0.1) 0%,transparent 60%);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.header-icon{font-size:64px;margin-bottom:12px;display:block}
+.header h1{font-size:28px;color:#f1f5f9;margin-bottom:6px;letter-spacing:1px}
+.header .subtitle{color:#94a3b8;font-size:15px}
+.header .meta{display:flex;justify-content:center;gap:24px;margin-top:16px;color:#cbd5e1;font-size:14px}
+.header .meta span{display:flex;align-items:center;gap:6px}
+.section-title{font-size:20px;color:#f1f5f9;margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid #334155;display:flex;align-items:center;gap:8px}
+.section-title .icon{font-size:22px}
+.summary-box{background:linear-gradient(135deg,#1e293b 0%,#1a2332 100%);border:1px solid #334155;border-radius:16px;padding:24px;margin:20px 0;font-size:15px;color:#cbd5e1;line-height:1.8}
+.paper-card{background:#1e293b;border:1px solid #334155;border-radius:16px;padding:24px;margin:16px 0;transition:transform 0.2s,box-shadow 0.2s}
+.paper-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3)}
+.paper-card.top-pick{border-left:4px solid #8b5cf6;background:linear-gradient(135deg,#1e293b 0%,#1a1f35 100%)}
+.paper-rank{font-size:24px;font-weight:700;color:#8b5cf6;float:left;margin-right:12px;line-height:1}
+.paper-emoji{font-size:28px;display:inline-block;margin-right:8px}
+.paper-title{font-size:17px;color:#f1f5f9;margin:8px 0;line-height:1.5}
+.paper-journal{font-size:13px;color:#64748b;margin-bottom:8px}
+.paper-summary{font-size:14px;color:#cbd5e1;margin:12px 0;line-height:1.8}
+.paper-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tag{background:#2d1b69;color:#c4b5fd;font-size:12px;padding:3px 10px;border-radius:12px;display:inline-block}
+.utility-badge{font-size:12px;padding:3px 10px;border-radius:12px;display:inline-block;font-weight:600;margin-left:8px}
+.utility-high{background:#065f46;color:#6ee7b7}
+.utility-mid{background:#713f12;color:#fcd34d}
+.utility-low{background:#7f1d1d;color:#fca5a5}
+.pico{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:12px 0;padding:12px;background:#0f172a;border-radius:10px}
+.pico-item{font-size:13px;color:#94a3b8;display:flex;gap:6px}
+.pico-label{background:#8b5cf6;color:#fff;font-weight:700;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:12px}
+.paper-link{display:inline-block;color:#818cf8;text-decoration:none;font-size:14px;margin-top:8px;transition:color 0.2s}
+.paper-link:hover{color:#a78bfa}
+.topic-section{margin:24px 0}
+.topic-bar-row{display:flex;align-items:center;gap:12px;margin:8px 0}
+.topic-label{color:#94a3b8;font-size:14px;min-width:100px;text-align:right}
+.topic-bar-track{flex:1;height:8px;background:#1e293b;border-radius:4px;overflow:hidden}
+.topic-bar-fill{height:100%;background:linear-gradient(90deg,#8b5cf6,#6366f1);border-radius:4px;transition:width 0.5s}
+.topic-count{color:#818cf8;font-size:14px;font-weight:600;min-width:24px}
+.keywords-section{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.keyword{background:#1e293b;border:1px solid #334155;color:#94a3b8;font-size:13px;padding:5px 14px;border-radius:20px}
+.footer{text-align:center;padding:32px 20px;margin-top:40px;border-top:1px solid #1e293b}
+.footer a{color:#818cf8;text-decoration:none;margin:0 8px;font-size:14px}
+.footer a:hover{color:#a78bfa;text-decoration:underline}
+.footer .footer-note{color:#475569;font-size:12px;margin-top:12px}
+.footer .clinic-links{margin:20px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.footer .clinic-links a{background:#1e293b;border:1px solid #334155;padding:10px 20px;border-radius:12px;font-size:14px;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s}
+.footer .clinic-links a:hover{background:#2d1b69;border-color:#8b5cf6;color:#c4b5fd;text-decoration:none}
+@media(max-width:640px){
+  .container{padding:12px}
+  .header h1{font-size:22px}
+  .pico{grid-template-columns:1fr}
+  .topic-label{min-width:80px;font-size:13px}
+  .header .meta{flex-direction:column;gap:8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <span class="header-icon">🩺</span>
+    <h1>Chronic Pain · 纖維肌痛症與慢性疼痛文獻日報</h1>
+    <div class="subtitle">每日自動更新</div>
+    <div class="meta">
+      <span>📅 2026年11月6日（週五）</span>
+      <span>📊 6 篇文獻</span>
+      <span>Powered by PubMed + NVIDIA AI</span>
+    </div>
+  </div>
+
+  <div class="section-title"><span class="icon">📋</span> 今日文獻趨勢</div>
+  <div class="summary-box">今日文獻集中探討了纖維肌痛症的數位康復、代謝外科結果、肥胖與中樞敏感化的病理生理關係，以及 valsartan 的新藥物重新定位機制。其中，數位介入與 AT1 受體阻斷的研究提供了新的治療視角與自我管理工具。</div>
+
+  <div class="section-title"><span class="icon">⭐</span> 今日精選 TOP Picks</div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#1</div>
+        <div class="paper-emoji">💻</div>
+        <span class="utility-badge utility-high">高實用性</span>
+        <h3 class="paper-title">纖維肌痛症數位康復介入之系統性檢視</h3>
+        <div class="paper-journal">Musculoskeletal science &amp; practice · Digital rehabilitation interventions for Fibromyalgia: A scoping review.</div>
+        <p class="paper-summary">本篇系統性檢討綜合了29項數位介入研究，證實數位治療（特別是監督式運動性遠端康復及 ACT/CBT 類心理治療）對纖維肌痛症患者的疼痛、疲勞、睡眠及心理變項均有顯益，但非監督式 App 介入結果不一，提示臨床上應優先考慮有監督或結構化的數位方案。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>成人纖維肌痛症患者</div>
+        <div class="pico-item"><span class="pico-label">I</span>數位健康介入（遠端康復、心理治療、自我管理 App）</div>
+        <div class="pico-item"><span class="pico-label">C</span>無介入或傳統面對治療</div>
+        <div class="pico-item"><span class="pico-label">O</span>疼痛、纖維肌痛影響量表、疲勞、睡眠、心理變項、身體功能</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">心理治療</span><span class="tag">CBT</span><span class="tag">ACT</span><span class="tag">正運動治療</span><span class="tag">數位健康</span><span class="tag">疼痛管理</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42987492/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#2</div>
+        <div class="paper-emoji">💊</div>
+        <span class="utility-badge utility-mid">中實用性</span>
+        <h3 class="paper-title">Valsartan 透過阻斷腦肌軸突信號改善纖維肌痛症</h3>
+        <div class="paper-journal">International immunopharmacology · A novel repurposing opportunity for valsartan: angiotensin II type 1 receptor blockade dampens muscle-to-brain sensitization in fibromyalgia by targeting lncRNA H19/miR-29a-3p, inflammatory mediators, AKT/CREB signaling, neurotrophic factors, and amyloid-Tau pathology.</div>
+        <p class="paper-summary">動物實驗顯示，Valsartan (AT1受體阻斷劑) 可顯著緩解纖維肌痛症模型中的力覺過敏與疲勞，其機制涉及調節肌肉中 lncRNA H19/miR-29a-3p 軸、抑制炎症介質、改善氧化應激與神經營養因子，並降低 amyloid‑Tau 髒亂，提供了肌肉‑大腦軸在纖維肌痛症發病機制中的新生物學證據。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>纖維肌痛症模型（大鼠）</div>
+        <div class="pico-item"><span class="pico-label">I</span>Valsartan (angiotensin II type 1 receptor blockade)</div>
+        <div class="pico-item"><span class="pico-label">C</span> untreated 模型對照</div>
+        <div class="pico-item"><span class="pico-label">O</span>機械性過敏、過敏痛、疲勞耐力、炎症標誌物、lncRNA/miRNA 表達、AKT/CREB 信號、神經營養因子</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">疼痛機制</span><span class="tag">神經科學</span><span class="tag">生物標記</span><span class="tag">藥物重新定位</span><span class="tag">抗炎</span><span class="tag">神經調節</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42832841/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#3</div>
+        <div class="paper-emoji">🏥</div>
+        <span class="utility-badge utility-mid">中實用性</span>
+        <h3 class="paper-title">代謝手術後纖維肌痛症患者之臨床結論</h3>
+        <div class="paper-journal">Obesity surgery · Clinical Outcomes after Metabolic Bariatric Surgery in Patients with Fibromyalgia: A Danish Nationwide Propensity-Score Matched Study.</div>
+        <p class="paper-summary">大規模民族登記研究比較了 fibromyalgia 病患與對照組接受代謝性減重手術的結果。雖然一年級質量生活改善幅度在纖維肌痛症組稍小，但並無顯著差異在術後併發症、體重變動或阿片類止痛藥使用上，證明纖維肌痛症並非代謝手術的絕對禁忌症，但需關注術後第一年的患者報告型生活品質變化。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>接受代謝性減重手術的纖維肌痛症患者</div>
+        <div class="pico-item"><span class="pico-label">I</span>代謝性減重手術（MBS）</div>
+        <div class="pico-item"><span class="pico-label">C</span>無 fibromyalgia 的對照群</div>
+        <div class="pico-item"><span class="pico-label">O</span>術後並發症、體重變動、質量生活、術後阿片類止痛使用</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">代謝性減重手術</span><span class="tag">生活品質</span><span class="tag">流行病學</span><span class="tag">阿片類藥物</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42986591/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#4</div>
+        <div class="paper-emoji">🧠</div>
+        <span class="utility-badge utility-high">高實用性</span>
+        <h3 class="paper-title">肥胖與中樞敏感化在纖維肌痛與相關風濕性疾病中的中介角色</h3>
+        <div class="paper-journal">Clinical rheumatology · Central sensitization partially mediates the relationship between obesity and functional impairment across fibromyalgia and related rheumatic disorders.</div>
+        <p class="paper-summary">跨疾病（FM、RA、SLE）大樣本分析顯示，較高 BMI 與更嚴重的症狀影響之間存在顯著關聯，其中中樞敏感化 statistically account 了約 28.5% 的 BMI‑症狀影響關聯，提示肥胖透過中樞敏感化機制加劇全身性疼痛與功能障礙，為 weight management 成為治療方案的重要環節。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>纖維肌痛症、類風濕關節炎、狼瘡患者及健康對照</div>
+        <div class="pico-item"><span class="pico-label">I</span>觀察性分析（BMI 分層）</div>
+        <div class="pico-item"><span class="pico-label">C</span>正常 BMI 對比 肥胖組</div>
+        <div class="pico-item"><span class="pico-label">O</span>症狀影響量表 (FIQR/SIQR)、中樞敏感化指標、功能障礙程度</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">中樞敏感化</span><span class="tag">肥胖</span><span class="tag">生物標記</span><span class="tag">功能障礙</span><span class="tag">疼痛管理</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42983161/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#5</div>
+        <div class="paper-emoji">📈</div>
+        <span class="utility-badge utility-mid">中實用性</span>
+        <h3 class="paper-title">代謝手術纖維肌痛症患者之長期併發症分析</h3>
+        <div class="paper-journal">Obesity surgery · Clinical Outcomes after Metabolic Bariatric Surgery in Patients with Fibromyalgia: A Danish Nationwide Propensity-Score Matched Study.</div>
+        <p class="paper-summary">同上篇研究之延伸分析，強調雖然早期並發症與晚期 major/minor complications 無顯著差異，但隨訪九年，纖維肌痛症組在質量生活報告上改善較慢，提醒醫師在評估手術適應症時須考慮患者的慢性疼痛狀態與預期的恢復曲線。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>接受代謝性減重手術的纖維肌痛症患者</div>
+        <div class="pico-item"><span class="pico-label">I</span>代謝性減重手術</div>
+        <div class="pico-item"><span class="pico-label">C</span>匹配對照組</div>
+        <div class="pico-item"><span class="pico-label">O</span>長期併發症、生存率、患者報告型結局</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">代謝性減重手術</span><span class="tag">長程追蹤</span><span class="tag">生活品質</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42986591/" target="_blank">閱讀原文 →</a>
+      </div>
+  <div class="section-title"><span class="icon">📚</span> 其他值得關注的文獻</div>
+      <div class="paper-card">
+        <div class="paper-emoji">📈</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">代謝手術纖維肌痛症患者之長期併發症分析</h3>
+        <div class="paper-journal">Obesity surgery</div>
+        <p class="paper-summary">大規模研究證實纖維肌痛症並非代謝手術的絕對禁忌，但術後第一年質量生活改善幅度較慢，需關注患者主觀症狀變化。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">代謝性減重手術</span><span class="tag">生活品質</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/42986591/" target="_blank">PubMed →</a>
+      </div>
+
+  <div class="section-title"><span class="icon">📊</span> 主題分佈</div><div class="topic-section">
+        <div class="topic-bar-row">
+          <span class="topic-label">纖維肌痛症</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:100%"></div></div>
+          <span class="topic-count">5</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">慢性疼痛</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:80%"></div></div>
+          <span class="topic-count">4</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">中樞敏感化</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:40%"></div></div>
+          <span class="topic-count">2</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">數位健康</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:20%"></div></div>
+          <span class="topic-count">1</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">藥物重新定位</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:20%"></div></div>
+          <span class="topic-count">1</span>
+        </div></div>
+  <div class="section-title"><span class="icon">🏷️</span> 關鍵字</div><div class="keywords-section"><span class="keyword">纖維肌痛症</span><span class="keyword">慢性疼痛</span><span class="keyword">中樞敏感化</span><span class="keyword">數位健康</span><span class="keyword">藥物重新定位</span></div>
+
+  <div class="footer">
+    <div class="clinic-links">
+      <a href="https://www.leepsyclinic.com/" target="_blank">🏥 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" target="_blank">📩 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" target="_blank">☕ Buy me a coffee</a>
+    </div>
+    <div class="footer-note">
+      資料來源：PubMed · 分析模型：nvidia/nemotron-3.5-lightning-30b-a3b<br>
+      <a href="https://github.com/u8901006/chronic-pain-fibromyalgia" target="_blank">GitHub</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
