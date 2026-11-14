@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chronic Pain · 纖維肌痛症與慢性疼痛文獻日報 · 2026年11月14日</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans TC',sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.7;min-height:100vh}
+.container{max-width:900px;margin:0 auto;padding:20px}
+.header{text-align:center;padding:48px 20px 32px;background:linear-gradient(135deg,#1e3a5f 0%,#2d1b69 50%,#1a1a2e 100%);border-radius:20px;margin-bottom:32px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(99,102,241,0.1) 0%,transparent 60%);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.header-icon{font-size:64px;margin-bottom:12px;display:block}
+.header h1{font-size:28px;color:#f1f5f9;margin-bottom:6px;letter-spacing:1px}
+.header .subtitle{color:#94a3b8;font-size:15px}
+.header .meta{display:flex;justify-content:center;gap:24px;margin-top:16px;color:#cbd5e1;font-size:14px}
+.header .meta span{display:flex;align-items:center;gap:6px}
+.section-title{font-size:20px;color:#f1f5f9;margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid #334155;display:flex;align-items:center;gap:8px}
+.section-title .icon{font-size:22px}
+.summary-box{background:linear-gradient(135deg,#1e293b 0%,#1a2332 100%);border:1px solid #334155;border-radius:16px;padding:24px;margin:20px 0;font-size:15px;color:#cbd5e1;line-height:1.8}
+.paper-card{background:#1e293b;border:1px solid #334155;border-radius:16px;padding:24px;margin:16px 0;transition:transform 0.2s,box-shadow 0.2s}
+.paper-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3)}
+.paper-card.top-pick{border-left:4px solid #8b5cf6;background:linear-gradient(135deg,#1e293b 0%,#1a1f35 100%)}
+.paper-rank{font-size:24px;font-weight:700;color:#8b5cf6;float:left;margin-right:12px;line-height:1}
+.paper-emoji{font-size:28px;display:inline-block;margin-right:8px}
+.paper-title{font-size:17px;color:#f1f5f9;margin:8px 0;line-height:1.5}
+.paper-journal{font-size:13px;color:#64748b;margin-bottom:8px}
+.paper-summary{font-size:14px;color:#cbd5e1;margin:12px 0;line-height:1.8}
+.paper-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tag{background:#2d1b69;color:#c4b5fd;font-size:12px;padding:3px 10px;border-radius:12px;display:inline-block}
+.utility-badge{font-size:12px;padding:3px 10px;border-radius:12px;display:inline-block;font-weight:600;margin-left:8px}
+.utility-high{background:#065f46;color:#6ee7b7}
+.utility-mid{background:#713f12;color:#fcd34d}
+.utility-low{background:#7f1d1d;color:#fca5a5}
+.pico{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:12px 0;padding:12px;background:#0f172a;border-radius:10px}
+.pico-item{font-size:13px;color:#94a3b8;display:flex;gap:6px}
+.pico-label{background:#8b5cf6;color:#fff;font-weight:700;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:12px}
+.paper-link{display:inline-block;color:#818cf8;text-decoration:none;font-size:14px;margin-top:8px;transition:color 0.2s}
+.paper-link:hover{color:#a78bfa}
+.topic-section{margin:24px 0}
+.topic-bar-row{display:flex;align-items:center;gap:12px;margin:8px 0}
+.topic-label{color:#94a3b8;font-size:14px;min-width:100px;text-align:right}
+.topic-bar-track{flex:1;height:8px;background:#1e293b;border-radius:4px;overflow:hidden}
+.topic-bar-fill{height:100%;background:linear-gradient(90deg,#8b5cf6,#6366f1);border-radius:4px;transition:width 0.5s}
+.topic-count{color:#818cf8;font-size:14px;font-weight:600;min-width:24px}
+.keywords-section{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.keyword{background:#1e293b;border:1px solid #334155;color:#94a3b8;font-size:13px;padding:5px 14px;border-radius:20px}
+.footer{text-align:center;padding:32px 20px;margin-top:40px;border-top:1px solid #1e293b}
+.footer a{color:#818cf8;text-decoration:none;margin:0 8px;font-size:14px}
+.footer a:hover{color:#a78bfa;text-decoration:underline}
+.footer .footer-note{color:#475569;font-size:12px;margin-top:12px}
+.footer .clinic-links{margin:20px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.footer .clinic-links a{background:#1e293b;border:1px solid #334155;padding:10px 20px;border-radius:12px;font-size:14px;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s}
+.footer .clinic-links a:hover{background:#2d1b69;border-color:#8b5cf6;color:#c4b5fd;text-decoration:none}
+@media(max-width:640px){
+  .container{padding:12px}
+  .header h1{font-size:22px}
+  .pico{grid-template-columns:1fr}
+  .topic-label{min-width:80px;font-size:13px}
+  .header .meta{flex-direction:column;gap:8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <span class="header-icon">🩺</span>
+    <h1>Chronic Pain · 纖維肌痛症與慢性疼痛文獻日報</h1>
+    <div class="subtitle">每日自動更新</div>
+    <div class="meta">
+      <span>📅 2026年11月14日（週六）</span>
+      <span>📊 5 篇文獻</span>
+      <span>Powered by PubMed + NVIDIA AI</span>
+    </div>
+  </div>
+
+  <div class="section-title"><span class="icon">📋</span> 今日文獻趨勢</div>
+  <div class="summary-box">今日文獻聚焦於纖維肌痛症長期療效評估、慢性盆痛中神經痛併發之流行病學特徵，以及纖維肌痛症患者感官神經通路之預ulse 抑制研究，涵蓋營餉療法、多維度評估與生物標誌物三大方向，針對臨床療效、風險因子與機制探索提供新證據。</div>
+
+  <div class="section-title"><span class="icon">⭐</span> 今日精選 TOP Picks</div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#1</div>
+        <div class="paper-emoji">💊</div>
+        <span class="utility-badge utility-mid">中實用性</span>
+        <h3 class="paper-title">長期輔助纖維肌痛症患者之固定多成分營餉劑 15 月回顧研究</h3>
+        <div class="paper-journal">Nutrients · Long-Term Add-On Use of a Fixed Multicomponent Formulation Containing Palmitoylethanolamide and Acetyl-L-Carnitine in Fibromyalgia Syndrome: A 15-Month Retrospective Single-Cohort Study of 150 Patients.</div>
+        <p class="paper-summary">六個月輔助 PEA/ALC 製劑之纖維肌痛症患者中，近 40% 達到最小臨床重要差異，但 12 月時約有 30% 因未達預期效果而停止使用，顯示長期單純營餉療法之實際臨床效果有限，需結合多Modalities 療法。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>150 名成人纖維肌痛症患者</div>
+        <div class="pico-item"><span class="pico-label">I</span>含 PEA 600mg、ALC 500mg、Boswellia serrata 100mg、維生素 B6 與 E 之固定多成分口服製劑，每日兩次，作為穩定背景療法之輔助</div>
+        <div class="pico-item"><span class="pico-label">C</span>未設定對照組，為單一群體回顧研究</div>
+        <div class="pico-item"><span class="pico-label">O</span>VAS 平均分從 76.3 下降至 52.3（12月）；FIQR 從 73.6 下降至 56.1；睡眠品質 (PSQI) 於完成者中僅 20.3% 改善 ≥3 點</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">營餉療法</span><span class="tag">臨床實務</span><span class="tag">治療依從性</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/43030320/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#2</div>
+        <div class="paper-emoji">🩺</div>
+        <span class="utility-badge utility-high">高實用性</span>
+        <h3 class="paper-title">慢性盆痛婦女中神經痛之流行病學特徵</h3>
+        <div class="paper-journal">Pain management nursing : official journal of the American Society of Pain Management Nurses · Neuropathic Pain in Women With Chronic Pelvic Pain: A Prospective Observational Study.</div>
+        <p class="paper-summary">在慢性盆痛婦女群體中，近三分之一患者併有神經痛，其強度與感官/情緒痛苦顯著相關，並與生產次數、流產史、纖維肌痛症、腸易激綜合症等臨床特徵呈顯著關聯，提倡於常規評估中納入神經痛篩檢。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>接受盆痛及子宮內膜異位症門診治療之女性患者</div>
+        <div class="pico-item"><span class="pico-label">I</span>使用 Douleur Neuropathique 4  questionnaires 進行神經痛分類</div>
+        <div class="pico-item"><span class="pico-label">C</span>未設定對照組，為前瞻性觀察研究</div>
+        <div class="pico-item"><span class="pico-label">O</span>神經痛患佔比 34.3%；僅餘短 McGill 疼痛量表總分在調整多重比較後保持顯著相關，作為感官/情緒痛苦強度之客觀指標</div>
+      </div>
+        <div class="paper-tags"><span class="tag">慢性疼痛</span><span class="tag">神經痛</span><span class="tag">流行病學</span><span class="tag">性別差異</span><span class="tag">多重診療</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/43026097/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#3</div>
+        <div class="paper-emoji">🧪</div>
+        <span class="utility-badge utility-low">低實用性</span>
+        <h3 class="paper-title">纖維肌痛症患者感官神經通路預ulse 抑制研究</h3>
+        <div class="paper-journal">Brain : a journal of neurology · Reading between the blinks: how much can prepulse inhibition tell us about fibromyalgia?</div>
+        <p class="paper-summary">探討纖維肌痛症患者感官預ulse 抑制 (PPI) 之變異性，旨在透過非侵入性生理測量了解中樞神經系統調節異常，作為潛在之生物標誌物或機制探索工具，雖無臨床介入直接效果，但對理解疾病病理生理具有啟示意義。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>纖維肌痛症患者</div>
+        <div class="pico-item"><span class="pico-label">I</span>感官預ulse 抑制 (PPI) 實驗程序</div>
+        <div class="pico-item"><span class="pico-label">C</span>健康對照組</div>
+        <div class="pico-item"><span class="pico-label">O</span>FMS 患者 PPI 參數與健康對照組相比呈現顯著差異，提示感官整合與中樞敏感化之潛在神經生物學標誌</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">神經科學</span><span class="tag">生物標誌物</span><span class="tag">中樞敏感化</span><span class="tag">實驗研究</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/43021427/" target="_blank">閱讀原文 →</a>
+      </div>
+  <div class="section-title"><span class="icon">📚</span> 其他值得關注的文獻</div>
+      <div class="paper-card">
+        <div class="paper-emoji">💊</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">長期輔助纖維肌痛症患者之固定多成分營餉劑 15 月回顧研究</h3>
+        <div class="paper-journal">Nutrients</div>
+        <p class="paper-summary">六個月輔助 PEA/ALC 製劑之纖維肌痛症患者中，近 40% 達到最小臨床重要差異，但 12 月時約有 30% 因未達預期效果而停止使用，顯示長期單純營餉療法之實際臨床效果有限，需結合多Modalities 療法。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">營餉療法</span><span class="tag">臨床實務</span><span class="tag">治療依從性</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/43030320/" target="_blank">PubMed →</a>
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">🩺</div>
+        <span class="utility-badge utility-high">高</span>
+        <h3 class="paper-title">慢性盆痛婦女中神經痛之流行病學特徵</h3>
+        <div class="paper-journal">Pain management nursing : official journal of the American Society of Pain Management Nurses</div>
+        <p class="paper-summary">在慢性盆痛婦女群體中，近三分之一患者併有神經痛，其強度與感官/情緒痛苦顯著相關，並與生產次數、流產史、纖維肌痛症、腸易激綜合症等臨床特徵呈顯著關聯，提倡於常規評估中納入神經痛篩檢。</p>
+        <div class="paper-tags"><span class="tag">慢性疼痛</span><span class="tag">神經痛</span><span class="tag">流行病學</span><span class="tag">性別差異</span><span class="tag">多重診療</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/43026097/" target="_blank">PubMed →</a>
+      </div>
+
+  <div class="section-title"><span class="icon">📊</span> 主題分佈</div><div class="topic-section">
+        <div class="topic-bar-row">
+          <span class="topic-label">纖維肌痛症</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:100%"></div></div>
+          <span class="topic-count">3</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">慢性疼痛</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:100%"></div></div>
+          <span class="topic-count">3</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">神經痛</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:67%"></div></div>
+          <span class="topic-count">2</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">營餉療法</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:33%"></div></div>
+          <span class="topic-count">1</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">流行病學</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:33%"></div></div>
+          <span class="topic-count">1</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">生物標誌物</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:33%"></div></div>
+          <span class="topic-count">1</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">中樞敏感化</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:33%"></div></div>
+          <span class="topic-count">1</span>
+        </div></div>
+  <div class="section-title"><span class="icon">🏷️</span> 關鍵字</div><div class="keywords-section"><span class="keyword">纖維肌痛症</span><span class="keyword">慢性疼痛</span><span class="keyword">營餉療法</span><span class="keyword">神經痛</span><span class="keyword">流行病學</span><span class="keyword">生物標誌物</span><span class="keyword">中樞敏感化</span></div>
+
+  <div class="footer">
+    <div class="clinic-links">
+      <a href="https://www.leepsyclinic.com/" target="_blank">🏥 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" target="_blank">📩 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" target="_blank">☕ Buy me a coffee</a>
+    </div>
+    <div class="footer-note">
+      資料來源：PubMed · 分析模型：nvidia/nemotron-3.5-lightning-30b-a3b<br>
+      <a href="https://github.com/u8901006/chronic-pain-fibromyalgia" target="_blank">GitHub</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
