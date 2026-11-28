@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chronic Pain · 纖維肌痛症與慢性疼痛文獻日報 · 2026年11月28日</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans TC',sans-serif;background:#0f172a;color:#e2e8f0;line-height:1.7;min-height:100vh}
+.container{max-width:900px;margin:0 auto;padding:20px}
+.header{text-align:center;padding:48px 20px 32px;background:linear-gradient(135deg,#1e3a5f 0%,#2d1b69 50%,#1a1a2e 100%);border-radius:20px;margin-bottom:32px;position:relative;overflow:hidden}
+.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(99,102,241,0.1) 0%,transparent 60%);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.header-icon{font-size:64px;margin-bottom:12px;display:block}
+.header h1{font-size:28px;color:#f1f5f9;margin-bottom:6px;letter-spacing:1px}
+.header .subtitle{color:#94a3b8;font-size:15px}
+.header .meta{display:flex;justify-content:center;gap:24px;margin-top:16px;color:#cbd5e1;font-size:14px}
+.header .meta span{display:flex;align-items:center;gap:6px}
+.section-title{font-size:20px;color:#f1f5f9;margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid #334155;display:flex;align-items:center;gap:8px}
+.section-title .icon{font-size:22px}
+.summary-box{background:linear-gradient(135deg,#1e293b 0%,#1a2332 100%);border:1px solid #334155;border-radius:16px;padding:24px;margin:20px 0;font-size:15px;color:#cbd5e1;line-height:1.8}
+.paper-card{background:#1e293b;border:1px solid #334155;border-radius:16px;padding:24px;margin:16px 0;transition:transform 0.2s,box-shadow 0.2s}
+.paper-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3)}
+.paper-card.top-pick{border-left:4px solid #8b5cf6;background:linear-gradient(135deg,#1e293b 0%,#1a1f35 100%)}
+.paper-rank{font-size:24px;font-weight:700;color:#8b5cf6;float:left;margin-right:12px;line-height:1}
+.paper-emoji{font-size:28px;display:inline-block;margin-right:8px}
+.paper-title{font-size:17px;color:#f1f5f9;margin:8px 0;line-height:1.5}
+.paper-journal{font-size:13px;color:#64748b;margin-bottom:8px}
+.paper-summary{font-size:14px;color:#cbd5e1;margin:12px 0;line-height:1.8}
+.paper-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tag{background:#2d1b69;color:#c4b5fd;font-size:12px;padding:3px 10px;border-radius:12px;display:inline-block}
+.utility-badge{font-size:12px;padding:3px 10px;border-radius:12px;display:inline-block;font-weight:600;margin-left:8px}
+.utility-high{background:#065f46;color:#6ee7b7}
+.utility-mid{background:#713f12;color:#fcd34d}
+.utility-low{background:#7f1d1d;color:#fca5a5}
+.pico{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:12px 0;padding:12px;background:#0f172a;border-radius:10px}
+.pico-item{font-size:13px;color:#94a3b8;display:flex;gap:6px}
+.pico-label{background:#8b5cf6;color:#fff;font-weight:700;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:12px}
+.paper-link{display:inline-block;color:#818cf8;text-decoration:none;font-size:14px;margin-top:8px;transition:color 0.2s}
+.paper-link:hover{color:#a78bfa}
+.topic-section{margin:24px 0}
+.topic-bar-row{display:flex;align-items:center;gap:12px;margin:8px 0}
+.topic-label{color:#94a3b8;font-size:14px;min-width:100px;text-align:right}
+.topic-bar-track{flex:1;height:8px;background:#1e293b;border-radius:4px;overflow:hidden}
+.topic-bar-fill{height:100%;background:linear-gradient(90deg,#8b5cf6,#6366f1);border-radius:4px;transition:width 0.5s}
+.topic-count{color:#818cf8;font-size:14px;font-weight:600;min-width:24px}
+.keywords-section{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.keyword{background:#1e293b;border:1px solid #334155;color:#94a3b8;font-size:13px;padding:5px 14px;border-radius:20px}
+.footer{text-align:center;padding:32px 20px;margin-top:40px;border-top:1px solid #1e293b}
+.footer a{color:#818cf8;text-decoration:none;margin:0 8px;font-size:14px}
+.footer a:hover{color:#a78bfa;text-decoration:underline}
+.footer .footer-note{color:#475569;font-size:12px;margin-top:12px}
+.footer .clinic-links{margin:20px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.footer .clinic-links a{background:#1e293b;border:1px solid #334155;padding:10px 20px;border-radius:12px;font-size:14px;display:inline-flex;align-items:center;gap:6px;transition:all 0.2s}
+.footer .clinic-links a:hover{background:#2d1b69;border-color:#8b5cf6;color:#c4b5fd;text-decoration:none}
+@media(max-width:640px){
+  .container{padding:12px}
+  .header h1{font-size:22px}
+  .pico{grid-template-columns:1fr}
+  .topic-label{min-width:80px;font-size:13px}
+  .header .meta{flex-direction:column;gap:8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <span class="header-icon">🩺</span>
+    <h1>Chronic Pain · 纖維肌痛症與慢性疼痛文獻日報</h1>
+    <div class="subtitle">每日自動更新</div>
+    <div class="meta">
+      <span>📅 2026年11月28日（週六）</span>
+      <span>📊 4 篇文獻</span>
+      <span>Powered by PubMed + NVIDIA AI</span>
+    </div>
+  </div>
+
+  <div class="section-title"><span class="icon">📋</span> 今日文獻趨勢</div>
+  <div class="summary-box">今日文獻聚焦於纖維肌痛症病理生理機制與遺傳/神經標記之間的關聯。第一篇探討血清生物標記物（S100B與BDNF）與中樞敏感化、睡眠及疾病嚴重度的相關性，雖未發現強診斷價值，但提供了關於病理生理機制的見解。第二篇則探討了血清素與阿片系統的遺傳變異與睡眠質量之間的關聯，發現疼痛負擔而非特定基因型是睡眠障礙的主要驅動因素。兩篇文獻共同指出，個體化醫療與鎖定特定病理生理通路可能是未來臨床突破的方向。</div>
+
+  <div class="section-title"><span class="icon">⭐</span> 今日精選 TOP Picks</div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#1</div>
+        <div class="paper-emoji">🔬</div>
+        <span class="utility-badge utility-mid">中實用性</span>
+        <h3 class="paper-title">纖維肌痛症患者血清 S100B 與 BDNF 水平與中樞敏感化、睡眠品質及疾病嚴重度之關聯</h3>
+        <div class="paper-journal">American Journal of Physical Medicine &amp; Rehabilitation · Serum S100B and Brain-Derived Neurotrophic Factor Levels in Fibromyalgia: Associations with Central Sensitization, Sleep Quality, and Disease Severity.</div>
+        <p class="paper-summary">纖維肌痛症患者血清 BDNF 與 S100B 均顯著高於對照組，但兩者區分診斷能力有限（AUC 0.661 與 0.641）；其中 BDNF 與中樞敏感化評分顯示顯著相關，顯示其可能參與病理生理機制而非僅作為診斷工具。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>37 名纖維肌痛症女性與 48 名健康女性</div>
+        <div class="pico-item"><span class="pico-label">I</span>無（觀察性研究，測量血清 BDNF 與 S100B）</div>
+        <div class="pico-item"><span class="pico-label">C</span>健康對照組</div>
+        <div class="pico-item"><span class="pico-label">O</span>血清生物標記物濃度、中樞敏感化相關性、睡眠品質相關性</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">中樞敏感化</span><span class="tag">生物標記</span><span class="tag">神經科學</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/43103006/" target="_blank">閱讀原文 →</a>
+      </div>
+      <div class="paper-card top-pick">
+        <div class="paper-rank">#2</div>
+        <div class="paper-emoji">🧬</div>
+        <span class="utility-badge utility-low">低實用性</span>
+        <h3 class="paper-title">纖維肌痛症主觀睡眠域之遺傳變異探討：血清素與阿片系統功能變異</h3>
+        <div class="paper-journal">Scandinavian Journal of Pain · Genetic variation and subjective sleep domains in fibromyalgia: exploratory associations in serotonergic and opioidergic systems.</div>
+        <p class="paper-summary">在 253 名纖維肌痛症女性中，疼痛負擔是主觀睡眠品質差異最強、最一致的預測因子；在調整疼痛與情緒後，SLC6A4 多型體與白天功能障礙關聯，OPRM1 多型體與睡眠藥物使用相關，顯示特定遺傳背景可能影響睡眠症狀的特定面向。</p>
+        
+      <div class="pico">
+        <div class="pico-item"><span class="pico-label">P</span>253 名纖維肌痛症女性（跨研究組合）</div>
+        <div class="pico-item"><span class="pico-label">I</span>無（觀察性遺傳研究，分析 HTR1A、SLC6A4、OPRM1 多型體）</div>
+        <div class="pico-item"><span class="pico-label">C</span>同組內部比較（不同多型體間）</div>
+        <div class="pico-item"><span class="pico-label">O</span>主觀睡眠品質（PSQI 全球分及各分項）與遺傳變異之間的關聯</div>
+      </div>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">睡眠醫學</span><span class="tag">遺傳學</span><span class="tag">心理神經免疫學</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/43102104/" target="_blank">閱讀原文 →</a>
+      </div>
+  <div class="section-title"><span class="icon">📚</span> 其他值得關注的文獻</div>
+      <div class="paper-card">
+        <div class="paper-emoji">📊</div>
+        <span class="utility-badge utility-mid">中</span>
+        <h3 class="paper-title">Serum S100B and Brain-Derived Neurotrophic Factor Levels in Fibromyalgia: Associations with Central Sensitization, Sleep Quality, and Disease Severity.</h3>
+        <div class="paper-journal">American journal of physical medicine &amp; rehabilitation</div>
+        <p class="paper-summary">纖維肌痛症患者血清 BDNF 與 S100B 水平顯著高於健康對照組，但在兩組間的區分診斷能力僅屬中等（AUC 0.661 與 0.641）。在纖維肌痛症組內，中樞敏感化評分與纖維肌痛症影響評分顯著相關，且即便調整睡眠品質後，此相關關係仍持續存在，顯示中樞敏感化可能是連接生物標記與臨床影響的關鍵橋樑。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">中樞敏感化</span><span class="tag">生物標記</span><span class="tag">神經科學</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/43103006/" target="_blank">PubMed →</a>
+      </div>
+      <div class="paper-card">
+        <div class="paper-emoji">📖</div>
+        <span class="utility-badge utility-low">低</span>
+        <h3 class="paper-title">Genetic variation and subjective sleep domains in fibromyalgia: exploratory associations in serotonergic and opioidergic systems.</h3>
+        <div class="paper-journal">Scandinavian journal of pain</div>
+        <p class="paper-summary">探討了 253 名纖維肌痛症女性中，血清素與阿片系統相關多型體與主觀睡眠品質之間的關聯。研究發現疼痛負擔是影響睡眠的主要因素，而在考慮疼痛與憂鬱症後，SLC6A4 與白天功能障礙、OPRM1 與睡眠藥物使用分項顯示出探索性關聯，但全域睡眠評分無顯著遺傳預測力，提醒臨床醫生在處理纖維肌痛症睡眠問題時，應優先考量疼痛管理與心理因子，而非單純依賴遺傳檢測。</p>
+        <div class="paper-tags"><span class="tag">纖維肌痛症</span><span class="tag">慢性疼痛</span><span class="tag">睡眠醫學</span><span class="tag">遺傳學</span><span class="tag">憂鬱症</span><span class="tag">焦慮症</span></div>
+        <a class="paper-link" href="https://pubmed.ncbi.nlm.nih.gov/43102104/" target="_blank">PubMed →</a>
+      </div>
+
+  <div class="section-title"><span class="icon">📊</span> 主題分佈</div><div class="topic-section">
+        <div class="topic-bar-row">
+          <span class="topic-label">纖維肌痛症</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:100%"></div></div>
+          <span class="topic-count">2</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">慢性疼痛</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:100%"></div></div>
+          <span class="topic-count">2</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">中樞敏感化</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:50%"></div></div>
+          <span class="topic-count">1</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">生物標記</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:50%"></div></div>
+          <span class="topic-count">1</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">遺傳學</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:50%"></div></div>
+          <span class="topic-count">1</span>
+        </div>
+        <div class="topic-bar-row">
+          <span class="topic-label">睡眠醫學</span>
+          <div class="topic-bar-track"><div class="topic-bar-fill" style="width:50%"></div></div>
+          <span class="topic-count">1</span>
+        </div></div>
+  <div class="section-title"><span class="icon">🏷️</span> 關鍵字</div><div class="keywords-section"><span class="keyword">纖維肌痛症</span><span class="keyword">慢性疼痛</span><span class="keyword">中樞敏感化</span><span class="keyword">生物標記</span><span class="keyword">遺傳變異</span><span class="keyword">睡眠品質</span></div>
+
+  <div class="footer">
+    <div class="clinic-links">
+      <a href="https://www.leepsyclinic.com/" target="_blank">🏥 李政洋身心診所首頁</a>
+      <a href="https://blog.leepsyclinic.com/" target="_blank">📩 訂閱電子報</a>
+      <a href="https://buymeacoffee.com/CYlee" target="_blank">☕ Buy me a coffee</a>
+    </div>
+    <div class="footer-note">
+      資料來源：PubMed · 分析模型：nvidia/nemotron-3.5-lightning-30b-a3b<br>
+      <a href="https://github.com/u8901006/chronic-pain-fibromyalgia" target="_blank">GitHub</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
